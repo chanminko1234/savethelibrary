@@ -178,37 +178,40 @@
  		margin: 4px 2px;
  		cursor: pointer;
  	}
+ 	
+
+ 	/*latestview*/
+ 	.view{
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		width: 800px;
+
+ 	}
+ 	.book{
+ 		justify-content: flex-start;
+ 		height: 150px;
+ 		width:  260px;
+ 	}
+ 	.text{
+ 		float:right;
+ 		padding: 10px;
+ 		justify-content: center;
+ 	}
+ 	.name{
+ 		float:right;
+ 		padding: 10px;
+ 		justify-content: center;
+ 	}
+ 	.margin{
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		width: 350px;
+
+ 	}
  	.product{
  		justify-content: flex-start;
  		height: 150px;
  	}
- 	.view{
- 		display: flex;
- 		flex-flow: row wrap;
- 		width: 350px;
- 	}
- 	.text{
- 		float: right;
- 		padding: 15px;
- 	}
-
-	/*latestview*/
-	.view{
-		display: flex;
-		flex-flow: row wrap;
-		width: 800px;
-		
-	}
-	.book{
-		 justify-content: flex-start;
-  		 height: 150px;
-  		 width:  260px;
-	}
-	.text{
-		float:right;
-		padding: 10px;
-		justify-content: center;
-	}
 
 
  </style>

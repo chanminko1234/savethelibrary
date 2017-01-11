@@ -33,9 +33,9 @@
 			<table class="table tabel-stripped">
 				<tr>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
@@ -44,9 +44,9 @@
 						<button type="download">DOWNLOAD</button>
 					</td>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
@@ -66,9 +66,9 @@
 				</tr>
 				<tr>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
@@ -76,9 +76,9 @@
 						<button type="download">DOWNLOAD</button>
 					</td>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
@@ -99,9 +99,9 @@
 				</tr>
 				<tr>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
@@ -109,9 +109,9 @@
 						<button type="download">DOWNLOAD</button>
 					</td>
 					<td class="col-md-3">
-						<div class="product view">
+						<div class="product margin">
 							<img src="images/image01.jpg" alt="" />
-							<div class="text">
+							<div class="name">
 								<p>Book Name by John Smith</p>
 							</div>
 						</div>
