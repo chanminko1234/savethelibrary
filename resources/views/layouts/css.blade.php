@@ -55,12 +55,12 @@
  	}
 
  	.photo{
- 		height: 300px;
- 		width: 300px;
+ 		height: 200px;
+ 		width: 400px;
  	}
  	.review{
- 		height: 200px;
- 		width: 200px;
+ 		height: 400px;
+ 		width: 300px;
  	}
  	.logoimg{
 
@@ -116,11 +116,6 @@
  	}
  	.panel-group {
  		overflow: auto;
- 		font-family: verdana;
- 		font-size: 12px;
- 		font-weight: 200;
- 		position: absolute;
- 		width: 300px;
  		height: 700px;
  	}
  	
@@ -182,6 +177,19 @@
  		text-decoration: none;
  		margin: 4px 2px;
  		cursor: pointer;
+ 	}
+ 	.product{
+ 		justify-content: flex-start;
+ 		height: 150px;
+ 	}
+ 	.view{
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		width: 350px;
+ 	}
+ 	.text{
+ 		float: right;
+ 		padding: 15px;
  	}
 
 	/*latestview*/
