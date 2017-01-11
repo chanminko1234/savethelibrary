@@ -1,5 +1,4 @@
- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Padauk" rel="stylesheet">
 
  <!-- Bootstrap -->
  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +20,36 @@
  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
  <style>
+	
+	
+	.navbar{
+		font-family: Lato;
+	}
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6{
+		font-family: Montserrat;
+	}
+	p{
+		font-family: Padauk;
+		font-size: medium;
+		text-decoration: none;
+
+	}
+	a, a:hover, a:focus {
+   		color: black;
+    	text-decoration: none;
+
+
+	}
+	p:hover{
+		color: #ACD7EE;
+	}
+
+
  	.booktext{
  		padding-left: 30px;
  		padding-right: 30px;
