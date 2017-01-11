@@ -2,8 +2,9 @@
 @section('content')
 
 <div class="container">
-	<h2 class="active" style="margin-left: 80px;">Latest News</h2>
+	
 	<div class="specials-grids">
+		<h2 class="pull-left category-caption">Latest News</h2>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="special-grid col-md-3">
@@ -42,6 +43,7 @@
 								</div>
 								<a href="javascript:;">A long link will naturally wrap around</a>
 							</li>
+
 							<li>
 								<div class="info">
 									<span class="date"><i class="fa fa-calendar-o"></i>11-Jan-2017</span>

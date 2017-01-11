@@ -2,7 +2,9 @@
 @section('content')
 
 <div class="container">
+
 	<div class="specials-grids">
+		<h2 class="pull-left  category-caption">Libraries</h2>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="special-grid col-md-3">
@@ -33,7 +35,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="right-sidebar">
-						<h2>Category</h2>
+						<h2 class=" category-caption">Category</h2>
 						<div class="panel-group"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">

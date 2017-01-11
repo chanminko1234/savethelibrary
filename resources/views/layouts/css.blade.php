@@ -325,12 +325,12 @@
  	}
  	.nav-sidebar .active a { 
  		cursor: default;
- 		background-color: #428bca; 
+ 		background-color: #009688; 
  		color: #fff; 
  		text-shadow: 1px 1px 1px #666; 
  	}
  	.nav-sidebar .active a:hover {
- 		background-color: #428bca;   
+ 		background-color: #009688;   
  	}
  	.nav-sidebar .text-overflow a,
  	.nav-sidebar .text-overflow .media-body {
@@ -349,6 +349,17 @@
  		-webkit-border-radius: 0 4px 4px 0; 
  		-moz-border-radius: 0 4px 4px 0; 
  		border-radius: 0 4px 4px 0; 
+ 	}
+ 	.category-caption{
+ 		font-size: 14px;
+ 		color: #fff;
+ 		background-color: #009688;
+ 		padding-top: 11px;
+ 		padding-right: 20px;
+ 		padding-bottom: 11px;
+ 		padding-left: 20px;
+ 		letter-spacing: 2px;
+ 		margin: 0px 2px 2px 0px;
  	}
 
 
