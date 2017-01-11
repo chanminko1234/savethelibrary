@@ -135,7 +135,7 @@
           </div>
           <div class="col-md-4">
            <a href="#">
-            <img src="{{asset('images/အကြီးအကဲ.jpg')}}" alt="" class="review">
+            <img src="{{asset('images/အကြီးအကဲ.jpg')}}" alt=""  class="review">
             <p>အကြီးအကဲ(နိုင်ငံတစ်ခုပျက်သုဉ်းခြင်း)</p>
           </a>
         </div>
