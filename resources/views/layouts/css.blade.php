@@ -29,8 +29,7 @@
  	.bookthumb{
  		width: 106px;
  		height: 161px;
- 		padding-left: 10px;
- 		padding-right: 10px;
+ 		padding: 15px 15px 15px 15px;
  	}
  	.latest{
  		list-style: none;
@@ -185,6 +184,23 @@
  		cursor: pointer;
  	}
 
+	/*latestview*/
+	.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 800px;
+		
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		 width:  260px;
+	}
+	.text{
+		float:right;
+		padding: 10px;
+		justify-content: center;
+	}
 
 
  </style>
