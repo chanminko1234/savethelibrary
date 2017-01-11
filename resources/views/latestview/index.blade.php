@@ -55,14 +55,11 @@
 		</div>
 	</div>
 
-
-
-
 	<!-- End Sidebar -->
 	<!-- Content -->
 	<h3>Featured Products</h3>
 
-	<div class="col-sm-9">
+	<div class="col-md-9">
 
 		<div class="view">
 
@@ -159,8 +156,8 @@
 		</div>
 </div>
 </div>
-
 @endsection
+
 {{-- 	
 	<div id="content"> --}}
 		<!-- Products -->
