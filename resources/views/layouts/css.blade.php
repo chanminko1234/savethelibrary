@@ -86,7 +86,7 @@
 
  	.footer{
  		width: auto;
- 		height:250px;
+ 		height:auto;
  		clear: both;
  		background-color: rgb(0,150,136);
  	}
