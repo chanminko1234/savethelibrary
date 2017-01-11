@@ -4,7 +4,7 @@
 
 <!-- Sidebar -->
 <div class="container">
-	<div class="col-md-3">
+	<div class="col-sm-3">
 		<div id="sidebar">
 			<ul class="categories">
 				<li>
@@ -56,110 +56,111 @@
 	</div>
 
 
-<!-- End Sidebar -->
-<!-- Content -->
-<h3>Featured Products</h3>
 
-<div class="col-md-9">
 
-	<div class="view">
-		
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
+	<!-- End Sidebar -->
+	<!-- Content -->
+	<h3>Featured Products</h3>
+
+	<div class="col-sm-9">
+
+		<div class="view">
+
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+
+				<div class="text">
+					<p>နန်းကျဘုရင်</p>
+					<p>ဝင်းငြိမ်း</p>
+					<p>စာအုပ်တိုက်-ငါတို့စာပေ
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-		<div class="book">
-			<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
-			
-			<div class="text">
-				<p>နန်းကျဘုရင်</p>
-				<p>ဝင်းငြိမ်း</p>
-				<p>စာအုပ်တိုက်-ငါတို့စာပေ
-				</p>
-			</div>
-		</div>
-	</div>
+</div>
 </div>
 
-
-
-
+@endsection
 {{-- 	
 	<div id="content"> --}}
 		<!-- Products -->
@@ -248,40 +249,39 @@
 				<li>
 					<div class="product">
 
-<<<<<<< HEAD
-												<table>
-													<tr>
-														<td  class="booktext">
-															<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a></td>
-															<td>
-																<p>နန်းကျဘုရင်</p>
-																<p>ဝင်းငြိမ်း</p>
-																<p>စာအုပ်တိုက်-ငါတို့စာပေ
-																</p>
-															</td>
-															<td  class="booktext">
-																<a href="#"><img src="images/သုခမြို့တော်.JPG" alt="သုခမြို့တော်" class="bookthumb" /></a></td>
-																<td>
-																	<p>သုခမြို့တော်</p>
-																	<p>မြသန်းတင့်</p>
-																	<p>စာအုပ်တိုက်-လောကသစ်စာပေ
-																	</p>
-																</td>
-																<td class="booktext">
-																	<a href="#"><img src="images/အကြီးအကဲ.jpg" alt="အကြီးအကဲ" class="bookthumb" /></a></td>
-																	<td>
-																		<p>အကြီးအကဲ(နိုင်ငံတစ်ခုပျက်သုဉ်းခြင်း)</p>
-																		<p>မောင်ပေါ်ထွန်း</p>
-																		<p>စာအုပ်တိုက်-ရာပြည့်စာအုပ်တိုက်
-																		</p>
-																	</td>
-																</tr>
-															</table>
-														</div>
-													</li>
-										</ul>
-										</div>
-									</div> -->
+						<table>
+							<tr>
+								<td  class="booktext">
+									<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a></td>
+									<td>
+										<p>နန်းကျဘုရင်</p>
+										<p>ဝင်းငြိမ်း</p>
+										<p>စာအုပ်တိုက်-ငါတို့စာပေ
+										</p>
+									</td>
+									<td  class="booktext">
+										<a href="#"><img src="images/သုခမြို့တော်.JPG" alt="သုခမြို့တော်" class="bookthumb" /></a></td>
+										<td>
+											<p>သုခမြို့တော်</p>
+											<p>မြသန်းတင့်</p>
+											<p>စာအုပ်တိုက်-လောကသစ်စာပေ
+											</p>
+										</td>
+										<td class="booktext">
+											<a href="#"><img src="images/အကြီးအကဲ.jpg" alt="အကြီးအကဲ" class="bookthumb" /></a></td>
+											<td>
+												<p>အကြီးအကဲ(နိုင်ငံတစ်ခုပျက်သုဉ်းခြင်း)</p>
+												<p>မောင်ပေါ်ထွန်း</p>
+												<p>စာအုပ်တိုက်-ရာပြည့်စာအုပ်တိုက်
+												</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div> -->
 
-@endsection
+
 

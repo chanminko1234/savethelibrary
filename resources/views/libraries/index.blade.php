@@ -40,7 +40,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#1">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ကချင်ြပည်နယ်
+											ကချင်ပြည်နယ်
 										</a>
 									</h4>
 								</div>
@@ -684,15 +684,4 @@
 		</div>
 
 		{{-- </div> --}}
-
-
-
-
-
-
-
-
-
-
-
-		@endsection
+@endsection

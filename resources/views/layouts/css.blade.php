@@ -55,12 +55,12 @@
  	}
 
  	.photo{
- 		height: 200px;
- 		width: 400px;
+ 		height: 300px;
+ 		width: 300px;
  	}
  	.review{
- 		height: 400px;
- 		width: 300px;
+ 		height: 200px;
+ 		width: 200px;
  	}
  	.logoimg{
 
@@ -85,7 +85,7 @@
 
  	.footer{
  		width: auto;
- 		height:auto;
+ 		height:250px;
  		clear: both;
  		background-color: rgb(0,150,136);
  	}
@@ -116,6 +116,11 @@
  	}
  	.panel-group {
  		overflow: auto;
+ 		font-family: verdana;
+ 		font-size: 12px;
+ 		font-weight: 200;
+ 		position: absolute;
+ 		width: 300px;
  		height: 700px;
  	}
  	
@@ -178,40 +183,125 @@
  		margin: 4px 2px;
  		cursor: pointer;
  	}
- 	
 
- 	/*latestview*/
- 	.view{
- 		display: flex;
- 		flex-flow: row wrap;
- 		width: 800px;
+	/*latestview*/
+	.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 800px;
+				
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		
+	}
+	.text{
+		float:right;
+		padding: 15px;
+		justify-content: center;
+	}
+	@media screen and (max-width: 360px)
+	{
+		.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 300px;
+				
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		
+	}
+	.text{
+		float:right;
+		padding: 15px;
+		justify-content: center;
+	}
 
- 	}
- 	.book{
- 		justify-content: flex-start;
- 		height: 150px;
- 		width:  260px;
- 	}
- 	.text{
- 		float:right;
- 		padding: 10px;
- 		justify-content: center;
- 	}
- 	.name{
- 		float:right;
- 		padding: 10px;
- 		justify-content: center;
- 	}
- 	.margin{
- 		display: flex;
- 		flex-flow: row wrap;
- 		width: 350px;
+	}
+	@media screen and (max-width: 600px)
+	{
+		.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 300px;
+				
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		 padding-left: 45px;
+  		
+	}
+	.text{
+		float:right;
+		padding: 15px;
+		justify-content: center;
+	}
 
- 	}
- 	.product{
- 		justify-content: flex-start;
- 		height: 150px;
- 	}
+	}
+	@media screen and (max-width: 384px)
+	{
+	.logoimg {
+    	height: 200px;
+    	margin-left: -40px;
+    	margin-right: 300px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+	}
+		.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 400px;
+				
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		 margin-left: -80px;
+  		
+	}
+	.text{
+		float:right;
+		padding: 5px;
+		justify-content: center;
+	}
+
+	}
+	@media screen and (max-width: 768px)
+	{
+	.logoimg {
+    	height: 200px;
+    	margin-left: -40px;
+    	margin-right: 300px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+	}
+		.view{
+		display: flex;
+		flex-flow: row wrap;
+		width: 400px;
+				
+	}
+	.book{
+		 justify-content: flex-start;
+  		 height: 150px;
+  		 margin-left: -80px;
+  		
+	}
+	.text{
+		float:right;
+		padding: 5px;
+		justify-content: center;
+	}
+	.col-md-3{
+		width: 25%;
+		
+
+	}
+	}
 
 
  </style>
