@@ -27,8 +27,8 @@
 
  	}
  	.bookthumb{
- 		width: 106px;
- 		height: 161px;
+ 		width: 140px;
+ 		height: 150px;
  		padding: 15px 15px 15px 15px;
  	}
  	.latest{
@@ -181,7 +181,7 @@
  	
 
  	/*latestview*/
- 	.view{
+ 	/*.view{
  		display: flex;
  		flex-flow: row wrap;
  		width: 800px;
@@ -196,7 +196,7 @@
  		float:right;
  		padding: 10px;
  		justify-content: center;
- 	}
+ 	}*/
  	.name{
  		float:right;
  		padding: 10px;
@@ -234,7 +234,7 @@
  		text-shadow: 1px 1px 1px #666; 
  	}
  	.nav-sidebar .active a:hover {
- 		background-color: #009688;   
+ 		background-color: #428bca;   
  	}
  	.nav-sidebar .text-overflow a,
  	.nav-sidebar .text-overflow .media-body {
@@ -263,9 +263,18 @@
  		padding-bottom: 11px;
  		padding-left: 20px;
  		letter-spacing: 2px;
- 		margin: 0px 2px 2px 0px;
+ 		margin: 0px 2px 2px 1px;
+ 	}
+ 	.book{
+ 		height: 150px;
+ 		width:  260px;
  	}
 
+ 	.detail {
+ 		padding-top: 0px;
+ 		padding-left: 15px;
+ 		padding-right: 10px;
+ 	}
 
  </style>
 
