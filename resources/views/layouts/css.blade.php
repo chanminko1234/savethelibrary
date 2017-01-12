@@ -93,7 +93,7 @@
 	}
 	.logoimg{
 		height:200px;
-		margin-left: 180px;
+		margin-left: 140px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
