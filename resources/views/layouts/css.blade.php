@@ -21,6 +21,35 @@
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
 <style>
+	@import "font-awesome";
+	
+	
+	.navbar{
+		font-family: Lato;
+	}
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6{
+		font-family: Montserrat;
+	}
+	p{
+		font-family: Padauk;
+		font-size: medium;
+		text-decoration: none;
+
+	}
+	a, a:hover, a:focus {
+		color: black;
+		text-decoration: none;
+
+
+	}
+	p:hover{
+		color: #ACD7EE;
+	}
 	.booktext{
 		padding-left: 30px;
 		padding-right: 30px;
@@ -255,4 +284,20 @@
 		padding-left: 17px;
 		padding-right: 10px;
 	}
+	.scrollup {
+		/*background-color: #009688;*/
+		width: 45px;
+		height: 65px;
+		position: fixed;
+		bottom: 10px;
+		right: 1px;
+		display: none;
+		text-indent: -9999px;
+		background-image: url(images/icons/scroll-up.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		z-index: 999997;
+		transition: all 0.3s;
+	}
+
 </style>

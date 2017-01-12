@@ -8,10 +8,10 @@
 {{--   <script src="{{asset('js/jquery.jcarousel.min.js')}}"></script>
 <script src="{{asset('js/functions.js')}}"></script> --}}
 
-  <!-- Call functions on document ready -->
-  
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
+<!-- Call functions on document ready -->
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
   	// Can also be used with $(document).ready()
   	$(window).load(function() {
   		$('.flexslider').flexslider({
@@ -24,4 +24,19 @@
             // Example Call anotherFunction
             appMaster.anotherFunction();
           });
-        </script>
+    $(document).ready(function () {
+     $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+         $('.scrollup').fadeIn();
+       } else {
+         $('.scrollup').fadeOut();
+       }
+     });
+     $('.scrollup').click(function () {
+       $("html, body").animate({
+         scrollTop: 0
+       }, 600);
+       return false;
+     });
+   });
+ </script>
