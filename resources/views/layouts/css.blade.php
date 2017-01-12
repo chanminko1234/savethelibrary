@@ -101,12 +101,12 @@
 	.footerimg{
 		width:160px;
 		height:150px;
-		margin-left: 200px;
-		margin-top: 45px;
+		/*margin-left: 200px;*/
+		margin-top: 58px;
 		margin-bottom: 10px;
 	}
 	.logotext{
-		margin-left: 200px;
+		/*margin-left: 200px;*/
 		margin-top: -5px;
 	}
 	.footer{
@@ -117,7 +117,7 @@
 	}
 	.footerdev{
 		margin-bottom: 10px;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.blue
 	{
@@ -306,7 +306,51 @@
 	.social_icon {
 		color: #fff;
 		margin-bottom: 10px;
-		margin-top: 60px;
+		margin-top: 30px;
+	}
+	.whatis{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
-</style>
+	.contact{
+		margin-top: 20px;
+	}
+
+	.cbox{
+		background-color:#b2dfdb ;
+		height:200px;
+		text-align: left;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	/*/* resource center 	*/
+
+	.resourceimg{
+		width: 150px; 
+		height: 200px;p}
+
+		.resourcebtn{
+			width: auto; 
+			background-color:#4CAF50; 
+			margin-left: 10px;
+		}
+
+		.resourcecaption{
+			width: 150px;
+			height:auto; 
+			display:block;
+		}
+
+		.resourcebtn2{
+			width:100%; 
+			background-color:#4CAF50;
+		}
+
+		.downbtn{
+			margin-left: -13px;
+		}
+
+	</style>

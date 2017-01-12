@@ -17,6 +17,7 @@
 
         <li><a href="/latestreview">Latest Review</a></li>
         <li><a href="/resourcecenter">Resource Center</a></li>
+        <li><a href="/aboutus">About Us</a></li>
 
       </ul>
 

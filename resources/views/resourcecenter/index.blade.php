@@ -27,100 +27,136 @@
 	</div>
 	<!-- End Sidebar -->
 	<!-- Products -->
-	<div class="col-md-9">
-		<div class="products">
-			<h3>Featured Products</h3>
-			<table class="table tabel-stripped">
-				<tr>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
-							</div>
-						</div>
-						
+	<div class="col-md-9 col-sm-9 col-xs-9 col-lg-9">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="row">
+					<div class="col-md-6 ">
+						<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+						<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
 
-						<button type="download">DOWNLOAD</button>
-					</td>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
-							</div>
+							<span style="margin-left: -13px;">Download</span></a>
 						</div>
 
-						<button type="download">DOWNLOAD</button>
-					</td>
-					{{-- <td>
-						<div class="product view">
-							<img src="images/image01.jpg" alt="" />
-							<div class="text">
-								<p>Book Name by John Smith</p>
+						<div class="col-md-6 col-sm-6">
+							<div class="caption resourcecaption">
+								<br>
+								<p><span class=" h4">The Flying Eagle</span>
+									<br>
+									<span class="h4">by John Smith fgdfgsdgdf</span></p>
+									<p>
+										<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+									</p>
+								</div>
 							</div>
 						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<div class="col-md-6 ">
+								<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+								<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
 
-						<button type="download">DOWNLOAD</button>
-					</td> --}}
-				</tr>
-				<tr>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
+									<span style="margin-left: -13px;">Download</span></a>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="caption resourcecaption">
+										<br>
+										<p><span class=" h4">The Flying Eagle</span>
+											<br>
+											<span class="h4">by John Smith fgdfgsdgdf</span></p>
+											<p>
+												<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<div class="row">
+									<div class="col-md-6 ">
+										<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+										<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
+											<span style="margin-left: -13px;">Download</span></a>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="caption resourcecaption">
+												<br>
+												<p><span class=" h4">The Flying Eagle</span>
+													<br>
+													<span class="h4">by John Smith fgdfgsdgdf</span></p>
+													<p>
+														<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6 col-lg-6">
+										<div class="row">
+											<div class="col-md-6 ">
+												<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+												<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
 
-						<button type="download">DOWNLOAD</button>
-					</td>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
-							</div>
-						</div>
+													<span style="margin-left: -13px;">Download</span></a>
+												</div>
+												<div class="col-md-6 col-sm-6">
+													<div class="caption resourcecaption">
+														<br>
+														<p><span class=" h4">The Flying Eagle</span>
+															<br>
+															<span class="h4">by John Smith fgdfgsdgdf</span></p>
+															<p>
+																<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-6">
+												<div class="row">
+													<div class="col-md-6 ">
+														<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+														<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
+															<span style="margin-left: -13px;">Download</span></a>
+														</div>
+														<div class="col-md-6 col-sm-6">
+															<div class="caption resourcecaption">
+																<br>
+																<p><span class=" h4">The Flying Eagle</span>
+																	<br>
+																	<span class="h4">by John Smith fgdfgsdgdf</span></p>
+																	<p>
+																		<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-6 col-md-6 col-lg-6">
+														<div class="row">
+															<div class="col-md-6 ">
+																<img src="images/image01.jpg" class="resourceimg img-responsive" alt="" >
+																<a href="#" class=" btn text-center hidden-xs hidden-sm resourcebtn" type="download" role="button">
+																	<span style="margin-left: -13px;">Download</span></a>
+																</div>
+																<div class="col-md-6 col-sm-6">
+																	<div class="caption resourcecaption">
+																		<br>
+																		<p><span class=" h4">The Flying Eagle</span>
+																			<br>
+																			<span class="h4">by John Smith fgdfgsdgdf</span></p>
+																			<p>
+																				<a href="#" class="btn text-center visible-xs visible-sm hidden-md hidden-lg resourcebtn2" type="download" role="button" ><span class="downbtn" >Download</span></a>
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 
-						<button type="download">DOWNLOAD</button>
-					</td>
-					{{-- <td>
-						<div class="product view">
-							<img src="images/image01.jpg" alt="" />
-							<div class="text">
-								<p>Book Name by John Smith</p>
-							</div>
-						</div>
+												<!-- End Products -->
 
-
-						<button type="download">DOWNLOAD</button>
-					</td> --}}
-				</tr>
-				<tr>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
-							</div>
-						</div>
-
-						<button type="download">DOWNLOAD</button>
-					</td>
-					<td class="col-md-3">
-						<div class="product margin">
-							<img src="images/image01.jpg" alt="" />
-							<div class="name">
-								<p>Book Name by John Smith</p>
-							</div>
-						</div>
-
-
-						<button type="download">DOWNLOAD</button>
-					</tr>
-				</table>
-			</div>
-			<!-- End Products -->
-
-			@endsection
+												@endsection

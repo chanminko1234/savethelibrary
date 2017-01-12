@@ -18,4 +18,5 @@ Route::get('/libraries', 'LibrariesController@index');
 Route::get('/latest', 'LatestController@index');
 Route::get('/latestreview', 'LatestReviewController@index');
 Route::get('/resourcecenter', 'ResourceCenterController@index');
+Route::get('/aboutus','AboutUsController@index');
 
