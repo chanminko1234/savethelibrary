@@ -13,7 +13,7 @@
 <link href="{{ asset('css/ripples.min.css') }}" rel="stylesheet">
 
 <!-- font Awesome CSS -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
@@ -81,7 +81,7 @@
 	}
 	.photo{
 		height: 200px;
-		width: 400px;
+		width: 300px;
 		border-radius: 10px;
 		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
@@ -302,6 +302,11 @@
 		background-position: center center;
 		z-index: 999997;
 		transition: all 0.3s;
+	}
+	.social_icon {
+		color: #fff;
+		margin-bottom: 10px;
+		margin-top: 60px;
 	}
 
 </style>

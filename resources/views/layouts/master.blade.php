@@ -18,8 +18,10 @@
 		
 		<div class="col-md-12">
 			@include('layouts.nav')
-			<a href="#" class="scrollup">Scroll</a>
-			@yield('content')
+			<div class="container">
+				<a href="#" class="scrollup">Scroll</a>
+				@yield('content')
+			</div>
 		</div>
 		
 
