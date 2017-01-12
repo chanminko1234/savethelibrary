@@ -289,10 +289,10 @@
 	}
 	.scrollup {
 		/*background-color: #009688;*/
-		width: 45px;
-		height: 65px;
+		width: 41px;
+		height: 59px;
 		position: fixed;
-		bottom: 10px;
+		bottom: -27px;
 		right: 1px;
 		display: none;
 		text-indent: -9999px;
