@@ -1,8 +1,12 @@
 @extends('layouts.master')
 @section('content')
 
+
+
+
 <div class="container">
 	<div class="specials-grids">
+		<h3 class="pull-left category-caption">Libraries</h3>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="special-grid col-md-3">
