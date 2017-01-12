@@ -2,9 +2,7 @@
 @section('content')
 
 <div class="container">
-
 	<div class="specials-grids">
-		<h2 class="pull-left  category-caption">Libraries</h2>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="special-grid col-md-3">
@@ -35,7 +33,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="right-sidebar">
-						<h2 class=" category-caption">Category</h2>
+						<h2>Category</h2>
 						<div class="panel-group"><!--category-productsr-->
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -108,12 +106,12 @@
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကော့ကရိတ်</a></li>
-											<li><a href="#">ကြာအင်းဆိပ်ြကီး</a></li>
+											<li><a href="#">ကြာအင်းဆိပ်ကြီး</a></li>
 											<li><a href="#">ဖာပွန်</a></li>
 											<li><a href="#">ဘားအံ</a></li>
 											<li><a href="#">မြဝတီ</a></li>
 											<li><a href="#">လှိုင်းဘွဲ့</a></li>
-											<li><a href="#">သံတောင်ြကီး</a></li>
+											<li><a href="#">သံတောင်ကြီး</a></li>
 										</ul>
 									</div>
 								</div>
@@ -179,7 +177,7 @@
 											<li><a href="#">ဖောင်းပြင်</a></li>
 											<li><a href="#">ဗန်းမောက်</a></li>
 											<li><a href="#">ဘုတလင်</a></li>
-											<li><a href="#">မံုရွာ</a></li>
+											<li><a href="#">မုံရွာ</a></li>
 											<li><a href="#">မော်လိုက်</a></li>
 											<li><a href="#">မြင်းမူ</a></li>
 											<li><a href="#">မြောင်</a></li>
@@ -200,7 +198,7 @@
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordian" href="#6">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											တင်္နသာရီတိုင်းဒေသကြီး
+											တနင်္သာရီတိုင်းဒေသကြီး
 										</a>
 									</h4>
 								</div>
@@ -210,12 +208,12 @@
 											<li><a href="#">ပုလော</a></li>
 											<li><a href="#">ကော့သောင်း</a></li>
 											<li><a href="#">ကျွန်းစု</a></li>
-											<li><a href="#">တင်္နသာရီ</a></li>
+											<li><a href="#">တနင်္သာရီ</a></li>
 											<li><a href="#">ထားဝယ်</a></li>
 											<li><a href="#">ဘုတ်ပြင်း</a></li>
 											<li><a href="#">မြိတ်</a></li>
 											<li><a href="#">ရေဖြူ</a></li>
-											<li><a href="#">လောင်းလံု</a></li>
+											<li><a href="#">လောင်းလုံ</a></li>
 											<li><a href="#">သရက်ချောင်း</a></li>
 										</ul>
 									</div>
@@ -402,13 +400,13 @@
 										<ul>
 											<li><a href="#">ကျိုက္မရော</a></li>
 											<li><a href="#">ကျိုက်ထို</a></li>
-											<li><a href="#">ချောင်းဆံု</a></li>
+											<li><a href="#">ချောင်းဆုံ</a></li>
 											<li><a href="#">ပေါင်</a></li>
 											<li><a href="#">ဘီးလင်း</a></li>
-											<li><a href="#">မုဒံု</a></li>
+											<li><a href="#">မုဒုံ</a></li>
 											<li><a href="#">မော်လမြိုင်</a></li>
 											<li><a href="#">ရေး</a></li>
-											<li><a href="#">သထံု</a></li>
+											<li><a href="#">သထုံ</a></li>
 											<li><a href="#">သံဖြူဇရပ်</a></li>
 										</ul>
 									</div>
@@ -438,7 +436,7 @@
 											<li><a href="#">မင်းပြား</a></li>
 											<li><a href="#">မာန်အောင်</a></li>
 											<li><a href="#">မောင်တော</a></li>
-											<li><a href="#">မြေပံု</a></li>
+											<li><a href="#">မြေပုံ</a></li>
 											<li><a href="#">မြောက်ဦး</a></li>
 											<li><a href="#">ရမ်းဗြဲ</a></li>
 											<li><a href="#">သံတွဲ</a></li>
@@ -462,11 +460,11 @@
 											<li><a href="#">တာမွေ</a></li>
 											<li><a href="#">လှိုင်</a></li>
 											<li><a href="#">ကျောက်တံတား</a></li>
-											<li><a href="#">မင်္ဂလာဒံု</a></li>
+											<li><a href="#">မင်္ဂလာဒုံ</a></li>
 											<li><a href="#">ဆိမ်ကမ်း</a></li>
 											<li><a href="#">တောင်ဥက္ကလာပ</a></li>
 											<li><a href="#">ထန်းတပင်</a></li>
-											<li><a href="#">ဒဂံုမြို့သစ်မြောက်ပိုင်း</a></li>
+											<li><a href="#">ဒဂုံမြို့သစ်မြောက်ပိုင်း</a></li>
 											<li><a href="#">ဗဟန်း</a></li>
 											<li><a href="#">မြောက်ဥက္ကလာပ</a></li>
 											<li><a href="#">ရွှေပြည်သာ</a></li>
@@ -481,12 +479,12 @@
 											<li><a href="#">ဆိပ်ကြီးခနောင်တို</a></li>
 											<li><a href="#">တိုက်ကြီး</a></li>
 											<li><a href="#">တွံတေး</a></li>
-											<li><a href="#">ဒဂံု</a></li>
-											<li><a href="#">ဒဂံုမြို့သစ်ဆိပ်ကမ်း</a></li>
+											<li><a href="#">ဒဂုံ</a></li>
+											<li><a href="#">ဒဂုံမြို့သစ်ဆိပ်ကမ်း</a></li>
 											<li><a href="#">ဒဂံုမြို့သစ်တောင်ပိုင်း</a></li>
-											<li><a href="#">ဒဂံုမြို့သစ်အရှေ့ပိုင်း</a></li>
+											<li><a href="#">ဒဂုံမြို့သစ်အရှေ့ပိုင်း</a></li>
 											<li><a href="#">ဒလ</a></li>
-											<li><a href="#">ဒေါပံု</a></li>
+											<li><a href="#">ဒေါပုံ</a></li>
 											<li><a href="#">ပန်းဘဲတန်း</a></li>
 											<li><a href="#">ပုဇွန်တောင်</a></li>
 											<li><a href="#">ဗိုလ်တထောင်</a></li>
@@ -501,9 +499,9 @@
 											<li><a href="#">သင်္ဃန်းကျွန်း</a></li>
 											<li><a href="#">သန်လျှင်</a></li>
 											<li><a href="#">သာကေတ</a></li>
-											<li><a href="#">သံုးခွ</a></li>
+											<li><a href="#">သုံးခွ</a></li>
 											<li><a href="#">အင်းစိန်</a></li>
-											<li><a href="#">အလံု</a></li>
+											<li><a href="#">အလုံ</a></li>
 										</ul>
 									</div>
 								</div>
@@ -528,7 +526,7 @@
 											<li><a href="#">ညောင်ရွှေ</a></li>
 											<li><a href="#">နမ့်စန်</a></li>
 											<li><a href="#">ပင်းတယ</a></li>
-											<li><a href="#">ဖယ်ခံု</a></li>
+											<li><a href="#">ဖယ်ခုံ</a></li>
 											<li><a href="#">မိုင်းကိုင်</a></li>
 											<li><a href="#">မိုင်းပန်</a></li>
 											<li><a href="#">မိုင်းရှုး</a></li>
@@ -539,7 +537,7 @@
 											<li><a href="#">လင်းခေး</a></li>
 											<li><a href="#">လဲချား</a></li>
 											<li><a href="#">လွိုင်လင်</a></li>
-											<li><a href="#">ဟိုပံုး</a></li>
+											<li><a href="#">ဟိုပုံး</a></li>
 										</ul>
 									</div>
 								</div>
@@ -562,7 +560,7 @@
 											<li><a href="#">ကောင်မင်ဆန်း</a></li>
 											<li><a href="#">ကျောက်မဲ</a></li>
 											<li><a href="#">ကွတ်ခိုင်</a></li>
-											<li><a href="#">ကွမ်းလံု</a></li>
+											<li><a href="#">ကွမ်းလုံ</a></li>
 											<li><a href="#">ချင်းရွှေဟော်မြို့နယ်ခွဲ</a></li>
 											<li><a href="#">ခွန်းမား</a></li>
 											<li><a href="#">ဆောင်ဖ</a></li>
@@ -594,7 +592,7 @@
 											<li><a href="#">ရင်ဖန့်</a></li>
 											<li><a href="#">လင်ဟော်</a></li>
 											<li><a href="#">လားရှိုး</a></li>
-											<li><a href="#">လံုထန်</a></li>
+											<li><a href="#">လုံထန်</a></li>
 											<li><a href="#">လောက်ကိုင်</a></li>
 											<li><a href="#">လောက်ကိုင်(အထူးဒေသ ၁)</a></li>
 											<li><a href="#">သိန်းနီ</a></li>
@@ -617,13 +615,13 @@
 								<div id="17" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="#">ကျိုင်းတံု</a></li>
+											<li><a href="#">ကျိုင်းတုံ</a></li>
 											<li><a href="#">တာချီလိတ်</a></li>
 											<li><a href="#">နမ့်ဖိုင်</a></li>
 											<li><a href="#">မိုင်းကာ</a></li>
 											<li><a href="#">မိုင်းခတ်</a></li>
 											<li><a href="#">မိုင်းဆတ်</a></li>
-											<li><a href="#">မိုင်းတံု</a></li>
+											<li><a href="#">မိုင်းတုံ</a></li>
 											<li><a href="#">မိုင်းပေါက်</a></li>
 											<li><a href="#">မိုင်းပျင်း</a></li>
 											<li><a href="#">မိုင်းဖျန်</a></li>
@@ -661,7 +659,7 @@
 											<li><a href="#">ဓနုဖြူ</a></li>
 											<li><a href="#">ပန်းတနော်</a></li>
 											<li><a href="#">ပုသိမ်</a></li>
-											<li><a href="#">ဖျာပံု</a></li>
+											<li><a href="#">ဖျာပုံ</a></li>
 											<li><a href="#">ဘိုကလေး</a></li>
 											<li><a href="#">မအူပင်</a></li>
 											<li><a href="#">မော်လမြိုင်ကျွန်း</a></li>
@@ -686,4 +684,15 @@
 		</div>
 
 		{{-- </div> --}}
-@endsection
+
+
+
+
+
+
+
+
+
+
+
+		@endsection
