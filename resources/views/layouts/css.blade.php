@@ -48,7 +48,7 @@
 
 	}
 	p:hover{
-		color: #ACD7EE;
+		color: gray;
 	}
 	.booktext{
 		padding-left: 30px;
@@ -82,10 +82,14 @@
 	.photo{
 		height: 200px;
 		width: 400px;
+		border-radius: 10px;
+		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
 	.review{
-		height: 400px;
-		width: 300px;
+		height: 300px;
+		width: 200px;
+		border-radius: 5px;
+		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
 	.logoimg{
 		height:200px;
