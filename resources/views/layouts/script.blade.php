@@ -4,6 +4,7 @@
 
   <script src="{{ asset('js/jquery.flexslider.js') }}"></script>
   <script src="{{ asset('js/custom.js') }}"></script>
+  <script src="{{ asset('js/jquery.simpleQuote.js')}} "></script>
 
 {{--   <script src="{{asset('js/jquery.jcarousel.min.js')}}"></script>
 <script src="{{asset('js/functions.js')}}"></script> --}}
@@ -15,8 +16,9 @@
   	// Can also be used with $(document).ready()
   	$(window).load(function() {
   		$('.flexslider').flexslider({
-  			animation: "slide"
-  		});
+  			animation: "slide",
+        slideshow:false
+      });
   	});
     $(document).ready(function() {
             // Call Menu Toggler
@@ -39,4 +41,10 @@
        return false;
      });
    });
- </script>
+    $("#simpleQuote").simpleQuote({ 
+      speed : 5000 
+    }, { 
+      includeAuthor : true 
+    }
+    );
+  </script>

@@ -93,8 +93,7 @@
 	}
 	.logoimg{
 		height:200px;
-		margin-left: 300px;
-		margin-right: 300px;
+		margin-left: 180px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -351,6 +350,22 @@
 
 		.downbtn{
 			margin-left: -13px;
+		}
+		ul#simpleQuote{
+			list-style-type:none;
+			margin-top: 20px;
+		}
+
+		ul#simpleQuote li{
+			font-family: 'Parisienne', cursive;
+			font-size: 20px;
+			width : 60%;
+		}
+
+		#author{
+			font-family: 'Parisienne', cursive;
+			font-size: 12px;
+			margin-top: 5px;
 		}
 
 	</style>
