@@ -1,54 +1,50 @@
 @extends('layouts.master')
 @section('content')
+<div class="specials-grids">
+	<h3 class="pull-left category-caption">Libraries</h3>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="special-grid col-md-3">
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Latest Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
 
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Latest Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
 
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Latest Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
+			</div>
+			<div class="special-grid col-md-3">
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Pre Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
 
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Pre Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
 
-<div class="container">
-	<div class="specials-grids">
-		<h3 class="pull-left category-caption">Libraries</h3>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="special-grid col-md-3">
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Latest Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
-
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Latest Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
-
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Latest Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
-				</div>
-				<div class="special-grid col-md-3">
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Pre Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
-
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Pre Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
-
-					<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
-					<a href="#">Pre Plans</a>
-					<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
-				</div>
-				<div class="col-md-3">
-					<div class="right-sidebar">
-						<h2>Category</h2>
-						<div class="panel-group"><!--category-productsr-->
+				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name">
+				<a href="#">Pre Plans</a>
+				<p>Lorem ipsum dolor sit amet consectetur adiing elit. </p>
+			</div>
+			<div class="col-md-3">
+				<div class="right-sidebar">
+					<h2>Category</h2>
+					<div class="panel-group"><!--category-productsr-->
+						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#1">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 											ကချင်ပြည်နယ်
 										</a>
 									</h4>
 								</div>
-								<div id="1" class="panel-collapse collapse">
+								<div id="collapse1" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ဗန်းမော်</a></li>
@@ -69,44 +65,42 @@
 											<li><a href="#">ရွှေကူ</a></li>
 											<li><a href="#">ဝိုင်းမော်</a></li>
 											<li><a href="#">အင်ဂျန်းယန်</a></li>
-										</ul>
+										</div>
 									</div>
-								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#2">
-											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ကယားပြည်နယ်
-										</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+												<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
+												ကယားပြည်နယ်
+											</a>
 									</h4>
 								</div>
-								<div id="2" class="panel-collapse collapse">
+								<div id="collapse2" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ဒီမောဆို</a></li>
-											<li><a href="#">ဖရူဆို</a></li>
-											<li><a href="#">ဖားဆောင်း</a></li>
-											<li><a href="#">ဘောလခဲ</a></li>
-											<li><a href="#">မယ်စဲ့</a></li>
-											<li><a href="#">ရှားတော</a></li>
-											<li><a href="#">လွိုင်ကော်</a></li>
+												<li><a href="#">ဖရူဆို</a></li>
+												<li><a href="#">ဖားဆောင်း</a></li>
+												<li><a href="#">ဘောလခဲ</a></li>
+												<li><a href="#">မယ်စဲ့</a></li>
+												<li><a href="#">ရှားတော</a></li>
+												<li><a href="#">လွိုင်ကော်</a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#3">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ကရင်ပြည်နယ်
-										</a>
+												ကရင်ပြည်နယ်</a>
 									</h4>
 								</div>
-								<div id="3" class="panel-collapse collapse">
+								<div id="collapse3" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကော့ကရိတ်</a></li>
@@ -120,16 +114,16 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#4">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ချင်းပြည်နယ်
-										</a>
+													ချင်းပြည်နယ်</a>
 									</h4>
 								</div>
-								<div id="4" class="panel-collapse collapse">
+								<div id="collapse4" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကန်ပက်လက်</a></li>
@@ -145,16 +139,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#5">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											စစ်ကိုင်းတိုင်းဒေသကြီး
-										</a>
+														စစ်ကိုင်းတိုင်းဒေသကြီး
+													</a>
 									</h4>
 								</div>
-								<div id="5" class="panel-collapse collapse">
+								<div id="collapse5" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကသာ</a></li>
@@ -163,7 +158,7 @@
 											<li><a href="#">မင်းကင်း</a></li>
 											<li><a href="#">ရွှေဘို</a></li>
 											<li><a href="#">ကနီ</a></li>
-											<li><a href="#">ကန့်ဘလူ</a></li>
+											<li><a href="#">ကန့်ဘလူ</a></li>						
 											<li><a href="#">ကလေး</a></li>
 											<li><a href="#">ကလေးဝ</a></li>
 											<li><a href="#">ကျွန်းလှ</a></li>
@@ -185,28 +180,28 @@
 											<li><a href="#">မော်လိုက်</a></li>
 											<li><a href="#">မြင်းမူ</a></li>
 											<li><a href="#">မြောင်</a></li>
-											<li><a href="#">ယင်းမာပင်</a></li>
+											<li><a href="#">ယင်းမာပင်</a>'5</li>
 											<li><a href="#">ရေဦး</a></li>
 											<li><a href="#">လဟယ်</a></li>
 											<li><a href="#">လေရှီး</a></li>
 											<li><a href="#">ဝက်လက်</a></li>
-											<li><a href="#">ဝန်းသို</a></li>
+											<li><a href="#">ဝန်းသို</a></li>						
 											<li><a href="#">ဟုမ္မလင်း</a></li>
 											<li><a href="#">အင်းတော်</a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#6">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											တနင်္သာရီတိုင်းဒေသကြီး
-										</a>
+														တနင်္သာရီတိုင်းဒေသကြီး</a>
 									</h4>
 								</div>
-								<div id="6" class="panel-collapse collapse">
+								<div id="collapse6" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ပုလော</a></li>
@@ -223,16 +218,16 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#7">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											နေပြည်တော်
-										</a>
+										နေပြည်တော်</a>
 									</h4>
 								</div>
-								<div id="7" class="panel-collapse collapse">
+								<div id="collapse7" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">လယ်ဝေး</a></li>
@@ -247,16 +242,15 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#8">
-											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ပဲခူးတိုင်းဒေသကြီး(အနောက်)
-										</a>
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>ပဲခူးတိုင်းဒေသကြီး(အနောက်)</a>
 									</h4>
 								</div>
-								<div id="8" class="panel-collapse collapse">
+								<div id="collapse8" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">မိုးညို</a></li>
@@ -277,16 +271,18 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#9">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ပဲခူးတိုင်းဒေသကြီး(အရှေ့)
+															ပဲခူးတိုင်းဒေသကြီး(အရှေ့)
+
 										</a>
 									</h4>
 								</div>
-								<div id="9" class="panel-collapse collapse">
+								<div id="collapse9" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကဝ</a></li>
@@ -307,16 +303,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#10">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 											မကွေးတိုင်းဒေသကြီး
 										</a>
 									</h4>
 								</div>
-								<div id="10" class="panel-collapse collapse">
+								<div id="collapse10" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">စလင်း</a></li>
@@ -347,16 +344,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#11">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 											မန္တလေးတိုင်းဒေသကြီး
 										</a>
 									</h4>
 								</div>
-								<div id="11" class="panel-collapse collapse">
+								<div id="collapse11" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">စဉ့်ကူး</a></li>
@@ -390,16 +388,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#12">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 											မွန်ပြည်နယ်
 										</a>
 									</h4>
 								</div>
-								<div id="12" class="panel-collapse collapse">
+								<div id="collapse12" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကျိုက္မရော</a></li>
@@ -416,49 +415,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#13">
-											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ရခိုင်ပြည်နယ်
-										</a>
-									</h4>
-								</div>
-								<div id="13" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">ဂွ</a></li>
-											<li><a href="#">ရသေ့တောင်</a></li>
-											<li><a href="#">ကျောက်တော်</a></li>
-											<li><a href="#">ကျောက်ဖြူ</a></li>
-											<li><a href="#">စစ်တွေ</a></li>
-											<li><a href="#">တောင်ကုတ်</a></li>
-											<li><a href="#">ပုဏ္ဏားကျွန်း</a></li>
-											<li><a href="#">ပေါက်တော</a></li>
-											<li><a href="#">ဘူးသီးတောင်</a></li>
-											<li><a href="#">မင်းပြား</a></li>
-											<li><a href="#">မာန်အောင်</a></li>
-											<li><a href="#">မောင်တော</a></li>
-											<li><a href="#">မြေပုံ</a></li>
-											<li><a href="#">မြောက်ဦး</a></li>
-											<li><a href="#">ရမ်းဗြဲ</a></li>
-											<li><a href="#">သံတွဲ</a></li>
-											<li><a href="#">အမ်း</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#14">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 											ရန်ကုန်တိုင်းဒေသကြီး
 										</a>
 									</h4>
 								</div>
-								<div id="14" class="panel-collapse collapse">
+								<div id="collapse13" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">တာမွေ</a></li>
@@ -510,16 +477,18 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#15">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ရှမ်းပြည်နယ်(တောင်)
+															ရှမ်းပြည်နယ်(တောင်)
+
 										</a>
 									</h4>
 								</div>
-								<div id="15" class="panel-collapse collapse">
+								<div id="collapse14" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">တောင်ကြီး</a></li>
@@ -546,16 +515,56 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#16">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ရှမ်းပြည်နယ်(မြောက်)
+															ရှမ်းပြည်နယ်(တောင်)
+
 										</a>
 									</h4>
 								</div>
-								<div id="16" class="panel-collapse collapse">
+								<div id="collapse15" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">တောင်ကြီး</a></li>
+											<li><a href="#">ကလော</a></li>
+											<li><a href="#">ကျေးသီး</a></li>
+											<li><a href="#">ကွန်ဟိန်း</a></li>
+											<li><a href="#">ဆီဆိုင်</a></li>
+											<li><a href="#">ညောင်ရွှေ</a></li>
+											<li><a href="#">နမ့်စန်</a></li>
+											<li><a href="#">ပင်းတယ</a></li>
+											<li><a href="#">ဖယ်ခုံ</a></li>
+											<li><a href="#">မိုင်းကိုင်</a></li>
+											<li><a href="#">မိုင်းပန်</a></li>
+											<li><a href="#">မိုင်းရှုး</a></li>
+											<li><a href="#">မိုးနဲ</a></li>
+											<li><a href="#">မောက်မယ်</a></li>
+											<li><a href="#">ရပ်စောက်</a></li>
+											<li><a href="#">ရွာငံ</a></li>
+											<li><a href="#">လင်းခေး</a></li>
+											<li><a href="#">လဲချား</a></li>
+											<li><a href="#">လွိုင်လင်</a></li>
+											<li><a href="#">ဟိုပုံး</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
+															ရှမ်းပြည်နယ်(မြောက်)
+
+										</a>
+									</h4>
+								</div>
+								<div id="collapse16" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကလောင်ဖာ</a></li>
@@ -607,16 +616,18 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#17">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ရှမ်းပြည်နယ်(အရှေ့)
+															ရှမ်းပြည်နယ်(အရှေ့)
+
 										</a>
 									</h4>
 								</div>
-								<div id="17" class="panel-collapse collapse">
+								<div id="collapse17" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကျိုင်းတုံ</a></li>
@@ -638,16 +649,18 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#18">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
 											<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
-											ဧရာဝတီတိုင်းဒေသကြီး
+															ဧရာဝတီတိုင်းဒေသကြီး
+
 										</a>
 									</h4>
 								</div>
-								<div id="18" class="panel-collapse collapse">
+								<div id="collapse18" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
 											<li><a href="#">ကြံခင်း</a></li>
@@ -680,23 +693,11 @@
 									</div>
 								</div>
 							</div>
-						</div><!--/category-products-->
-						<div class="clearfix"></div>
+						</div> <!-- right slide -->
 					</div>
-				</div>
-			</div>
+				</div><!--/category-products-->
+			<div class="clearfix"></div>
 		</div>
-
-		{{-- </div> --}}
-
-
-
-
-
-
-
-
-
-
-
-		@endsection
+	</div>
+</div>{{-- </div> --}}
+@endsection
