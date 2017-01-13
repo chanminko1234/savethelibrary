@@ -112,7 +112,7 @@
 		width: auto;
 		height:auto;
 		clear: both;
-		background-color: rgb(0,150,136);
+		background-color: #2e7D32;
 	}
 	.footerdev{
 		margin-bottom: 10px;
@@ -191,7 +191,7 @@
 		margin-left: 70px;
 	}
 	button[type=download]{
-		background-color: #4CAF50;
+		background-color: #689f38;
 		border: none;
 		color: white;
 		padding: 9px 11px;
@@ -247,12 +247,12 @@
 	}
 	.nav-sidebar .active a { 
 		cursor: default;
-		background-color: #009688; 
+		background-color: #689f38; 
 		color: #fff; 
 		text-shadow: 1px 1px 1px #666; 
 	}
 	.nav-sidebar .active a:hover {
-		background-color: #009688;   
+		background-color: #689f38;   
 	}
 	.nav-sidebar .text-overflow a,
 	.nav-sidebar .text-overflow .media-body {
@@ -274,7 +274,7 @@
 	.category-caption{
 		font-size: 14px;
 		color: #fff;
-		background-color: #009688;
+		background-color: #2e7D32;
 		padding-top: 11px;
 		padding-right: 20px;
 		padding-bottom: 11px;
@@ -368,8 +368,8 @@
 			margin-top: 5px;
 		}
 		.panel-body {
-	    	padding: 15px;
-    		background-color: #eee;
+			padding: 15px;
+			background-color: #eee;
 		}
 		.panel-body ul {
 			text-align: justify;
