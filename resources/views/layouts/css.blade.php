@@ -367,5 +367,14 @@
 			font-size: 12px;
 			margin-top: 5px;
 		}
+		.panel-body {
+	    	padding: 15px;
+    		background-color: #eee;
+		}
+		.panel-body ul {
+			text-align: justify;
+			text-decoration: none;
+			list-style: none;
+		}
 
 	</style>
