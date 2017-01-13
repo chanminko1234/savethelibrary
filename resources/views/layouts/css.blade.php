@@ -288,15 +288,15 @@
 		padding-right: 10px;
 	}
 	.scrollup {
-		/*background-color: #009688;*/
-		width: 41px;
-		height: 59px;
+		background-color: #fff;
+		width: 26px;
+		height: 26px;
 		position: fixed;
-		bottom: -27px;
+		bottom: 1px;
 		right: 1px;
 		display: none;
 		text-indent: -9999px;
-		background-image: url(images/icons/scroll-up.png);
+		background-image: url(images/icons/Up-Squared-Filled-30.png);
 		background-repeat: no-repeat;
 		background-position: center center;
 		z-index: 999997;
