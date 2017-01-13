@@ -45,6 +45,5 @@
       speed : 5000 
     }, { 
       includeAuthor : true 
-    }
-    );
+    });
   </script>
