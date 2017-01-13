@@ -247,12 +247,12 @@
 	}
 	.nav-sidebar .active a { 
 		cursor: default;
-		background-color: #689f38; 
+		background-color: #2e7D32; 
 		color: #fff; 
 		text-shadow: 1px 1px 1px #666; 
 	}
 	.nav-sidebar .active a:hover {
-		background-color: #689f38;   
+		background-color: #2e7D32;   
 	}
 	.nav-sidebar .text-overflow a,
 	.nav-sidebar .text-overflow .media-body {
