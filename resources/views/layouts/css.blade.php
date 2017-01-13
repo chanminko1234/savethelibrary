@@ -12,6 +12,8 @@
 <link href="{{ asset('css/bootstrap-material-design.css') }}" rel="stylesheet">
 <link href="{{ asset('css/ripples.min.css') }}" rel="stylesheet">
 
+
+
 <!-- font Awesome CSS -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -98,8 +100,8 @@
 		margin-bottom: 10px;
 	}
 	.footerimg{
-		width:160px;
-		height:150px;
+		width:155px;
+		height:112px;
 		/*margin-left: 200px;*/
 		margin-top: 58px;
 		margin-bottom: 10px;

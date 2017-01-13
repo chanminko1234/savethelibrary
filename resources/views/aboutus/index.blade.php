@@ -84,7 +84,8 @@
 				<br>(အလင်းတံခါး စာကြည့်တိုက်)
 				<br>
 
-				ဖုန်း - ၀၉ ၅၁၇၅၂၅၉
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၅၁၇၅၂၅၉
 			</address>
 		</div>
 
@@ -98,7 +99,8 @@
 				ကိုကျော်ဆန်းလင်း 
 				<br>(အလင်းတံခါး စာကြည့်တိုက်)
 				<br>
-				ဖုန်း - ၀၉ ၇၉၇၆၆၀၇၇၄
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၉၇၆၆၀၇၇၄
 
 			</address>
 
@@ -117,7 +119,8 @@
 				(ပျော်ရွှင်သော ကလေးငယ်များ)
 
 				<br>
-				ဖုန်း - ၀၉ ၇၉၅၅၅၇၉၅၅
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၉၅၅၅၇၉၅၅
 
 			</address>
 
@@ -133,7 +136,9 @@
 				<br>
 
 				မမေသူထွန်းမြင့်<br>(မေတ္တာရိပ်ရွေ့လျား စာကြည့်တိုက်)
-				<br>ဖုန်း - ၀၉ ၄၂၀၀၀၀၄၄၉
+				<br>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၄၂၀၀၀၀၄၄၉
 
 			</address>
 
@@ -144,84 +149,91 @@
 
 
 		<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
-			<address?
-			မန္တလေးကွန်ရက်တာဝန်ခံ<br>
+			<address>
+				မန္တလေးကွန်ရက်တာဝန်ခံ<br>
 
-			ကိုမျိုးနိုင်ဦး<br> (ထွန်းတောက်ရောင်ခြည် စာကြည့်တိုက်)
+				ကိုမျိုးနိုင်ဦး<br> (ထွန်းတောက်ရောင်ခြည် စာကြည့်တိုက်)
+				<br>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၈၃၂၂၂၀၈၃
+			</address?>
+
+
+
+
+
+		</div>
+
+		<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
+			<address>
+				စစ်ကိုင်းတိုင်းကွန်ရက် တာဝန်ခံ
+				<br>
+				ကိုတိုးလင်းအောင်
+				<br>
+				(အတိုင်းအဆမဲ့ရလာဒ် စာကြည့်တိုက်)
+				<br>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၈၆၄၂၆၀၁၀
+				<br>
+				<br>
+				ကိုဇော်ဝင်းမောင် (လူငယ့်အားမာန် စာကြည့်တိုက်)
+				<br>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၃၅၅၁၀၈၇
+			</address>
+
+
+
+
+
+		</div>
+
+
+		<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
+			<addresss>
+				မကွေးတိုင်းကွန်ရက် တာဝန်ခံ
+				<br>
+				ကိုသန်းတင်အောင် 
+				<br>
+				(ပွင့်ဖြူကွန်ရက်)
+				<br>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၄၀၁၅၇၄၅၁၈
+			</addresss>
+
+
+
+
+
+		</div>
+
+		<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
+			ကွန်ရက်ချိတ်ဆက် တာဝန်ခံ
 			<br>
-			ဖုန်း - ၀၉ ၇၈၃၂၂၂၀၈၃
-		</address?>
+			ကိုမောင်မောင်စိုး
+			<br>
+			<br>
+			<i class="fa fa-phone" aria-hidden="true"></i> ၀၉ ၇၉၅၉၆၉၆၈၆
+			<br>
+			<br>
+			ဗဂျီအိမ် ရွေ့လျားစာကြည့်တိုက်
+			<br>
+
+
+			၁၀၆၊ အောင်မင်္ဂလာလမ်း၊ ကျောက်မြောင်း၊ တာမွေ
+
+
+
+		</div>
+
+
+
 
 
 
 
 
 	</div>
-
-	<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
-		<address>
-			စစ်ကိုင်းတိုင်းကွန်ရက် တာဝန်ခံ
-			<br>
-			ကိုတိုးလင်းအောင်
-			<br>
-			(အတိုင်းအဆမဲ့ရလာဒ် စာကြည့်တိုက်)
-			<br>
-			ဖုန်း - ၀၉ ၇၈၆၄၂၆၀၁၀
-			<br>
-			ကိုဇော်ဝင်းမောင် (လူငယ့်အားမာန် စာကြည့်တိုက်)
-			<br>
-			ဖုန်း - ၀၉ ၇၃၅၅၁၀၈၇
-		</address>
-
-
-
-
-
-	</div>
-
-
-	<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
-		<addresss>
-			မကွေးတိုင်းကွန်ရက် တာဝန်ခံ
-			<br>
-			ကိုသန်းတင်အောင် 
-			<br>
-			(ပွင့်ဖြူကွန်ရက်)
-			<br>
-			ဖုန်း - ၀၉ ၄၀၁၅၇၄၅၁၈
-		</addresss>
-
-
-
-
-
-	</div>
-
-	<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 cbox">
-		ကွန်ရက်ချိတ်ဆက် တာဝန်ခံ
-		<br>
-		ကိုမောင်မောင်စိုး
-		<br>
-		ဖုန်း - ၀၉ ၇၉၅၉၆၉၆၈၆
-		<br>
-		ဗဂျီအိမ် ရွေ့လျားစာကြည့်တိုက်
-		<br>
-
-
-		၁၀၆၊ အောင်မင်္ဂလာလမ်း၊ ကျောက်မြောင်း၊ တာမွေ
-
-
-
-	</div>
-
-
-
-
-
-
-
-
-</div>
 </div>
 
 <div class="clearfix"></div>
