@@ -378,5 +378,24 @@
 			text-decoration: none;
 			list-style: none;
 		}
+		.contentimage{
+			width: 500px;
+			height: 250px;
+
+		}
+		#slideshow {
+			margin: 80px auto;
+			position: relative;
+			margin-bottom:  280px;
+			box-shadow: 10px solid black;
+		}
+
+		#slideshow > div {
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+		}
 
 	</style>
