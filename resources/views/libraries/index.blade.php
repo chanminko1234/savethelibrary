@@ -34,7 +34,6 @@
 				<div class="right-sidebar">
 					<h2>Category</h2>
 					<div class="panel-group"><!--category-productsr-->
-						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -694,7 +693,6 @@
 								</div>
 							</div>
 						</div> <!-- right slide -->
-					</div>
 				</div><!--/category-products-->
 			<div class="clearfix"></div>
 		</div>
