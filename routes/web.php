@@ -21,3 +21,6 @@ Route::get('/resourcecenter', 'ResourceCenterController@index');
 Route::get('/aboutus','AboutUsController@index');
 Route::get('/bookdetail', 'BookDetilController@index');
 
+Route::group(['prefix' => 'backend'], function () {
+	Route::get('/',"BackendController@index");
+});
