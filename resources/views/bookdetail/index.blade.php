@@ -3,11 +3,23 @@
 
 @include('layouts.sidebar')
 
-
-	{{-- <div id="content"> --}}
-	<!-- Products -->
 	
-	<div class="products">
+		<div class="col-md-4">
+			<h3>Book Details</h3>
+			<section>
+
+			<a href=""><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+				
+					
+				
+			</section>
+		</div>
+
+		<div class="col-md-5">
+			
+		</div>
+		
+		<div class="products">
 		<div class="col-md-9">
 			<h3>Featured Products</h3>
 			<section>
@@ -134,6 +146,11 @@
 
 		</div>
 	</div>
-	@endsection
 
 
+
+
+
+
+
+@endsection
