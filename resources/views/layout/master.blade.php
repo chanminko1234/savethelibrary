@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>WPA 24V</title>
+  <title>Save The Library</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -17,25 +17,25 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="{{ asset('css/blue.css') }}">
   <link rel="stylesheet" href="{{ asset('css/sweetalert.css') }}">
-<body class="hold-transition login-page">
+  <body class="hold-transition login-page">
 
 
-        @yield("content")
+    @yield("content")
 
-  <!-- jQuery 2.2.3 -->
-<script src="{{ asset('js/app.js') }}"></script>
-<!-- iCheck -->
-<script src="{{ asset('js/icheck.min.js') }}"></script>
-<script src="{{ asset('js/sweetalert.min.js') }}"></script>
-@include('sweet::alert')
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
+    <!-- jQuery 2.2.3 -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- iCheck -->
+    <script src="{{ asset('js/icheck.min.js') }}"></script>
+    <script src="{{ asset('js/sweetalert.min.js') }}"></script>
+    @include('sweet::alert')
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
       increaseArea: '20%' // optional
     });
-  });
-</script>
-</body>
-</html>
+      });
+    </script>
+  </body>
+  </html>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WPA #24</title>
+	<title>Save The Library</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -35,9 +35,9 @@
 		<!-- Left side column. contains the logo and sidebar -->
 		@include("backend.sidebar")
 
- <div class="content-wrapper">		
-		@yield("content")
-</div>
+		<div class="content-wrapper">		
+			@yield("content")
+		</div>
 		@include("backend.rightsidebar")
 
 		<footer class="main-footer">

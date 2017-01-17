@@ -71,7 +71,7 @@
 				<div class="row">
 					<article class="col-lg-4 col-md-4">
 						<div class="book">
-							<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+							<a href="/bookdetail"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
 						</div>
 						<div class="detail">
 							<p>နန်းကျဘုရင်</p>
@@ -84,7 +84,7 @@
 
 					<article class="col-lg-4 col-md-4">
 						<div class="book">
-							<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+							<a href="/bookdetail"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
 						</div>
 						<div class="detail">
 							<p>နန်းကျဘုရင်</p>
@@ -96,7 +96,7 @@
 					</article>
 					<article class="col-lg-4 col-md-4">
 						<div class="book">
-							<a href="#"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
+							<a href="/bookdetail"><img src="images/နန်းကျဘုရင်.jpg" alt="နန်းကျဘုရင်" class="bookthumb" /></a>
 						</div>
 						<div class="detail">
 							<p>နန်းကျဘုရင်</p>
@@ -104,7 +104,6 @@
 							<p>စာအုပ်တိုက်-ငါတို့စာပေ
 							</p>
 						</div>
-
 					</article>
 				</div> 
 			</section>
