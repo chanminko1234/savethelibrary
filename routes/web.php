@@ -19,7 +19,11 @@ Route::get('/latest', 'LatestController@index');
 Route::get('/latestreview', 'LatestReviewController@index');
 Route::get('/resourcecenter', 'ResourceCenterController@index');
 Route::get('/aboutus','AboutUsController@index');
+<<<<<<< HEAD
 Route::get('/bookdetail', 'BookDetailController@index');
+=======
+Route::get('/bookdetail', 'BookDetilController@index');
+>>>>>>> d91bd8da30685a37f6cfdd1223803d09c0a91c96
 
 Route::group(['prefix' => 'backend'], function () {
 	Route::get('/',"BackendController@index");

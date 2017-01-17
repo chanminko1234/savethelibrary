@@ -28,6 +28,7 @@
 	
 	.navbar{
 		font-family: Lato;
+		margin-right: -20px;
 	}
 	h1
 	h2

@@ -2336,6 +2336,7 @@
                 "dump"
             ],
             "time": "2017-01-02 20:31:54"
+<<<<<<< HEAD
         },
         {
             "name": "uxweb/sweet-alert",
@@ -2387,6 +2388,8 @@
                 "sweet"
             ],
             "time": "2016-11-23 21:14:35"
+=======
+>>>>>>> d91bd8da30685a37f6cfdd1223803d09c0a91c96
         },
         {
             "name": "vlucas/phpdotenv",
