@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9cf22d18eda662b0182e033e3ab919dc",
-    "content-hash": "e18352e59cb681e8397648a2541aa372",
+    "hash": "96bb307e445a574a4ad075955684c0cf",
+    "content-hash": "aa1ad537c3beb68a85da2d21414fec06",
     "packages": [
         {
             "name": "cartalyst/sentinel",
@@ -1068,16 +1068,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.22.0",
+            "version": "1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "3b114ab800c6432ad42387ccf6bc8d4388a2885a"
+                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/3b114ab800c6432ad42387ccf6bc8d4388a2885a",
-                "reference": "3b114ab800c6432ad42387ccf6bc8d4388a2885a",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
+                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1117,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-01-15 14:47:48"
+            "time": "2017-01-16 07:55:07"
         },
         {
             "name": "nikic/php-parser",
@@ -1469,39 +1469,6 @@
                 "uuid"
             ],
             "time": "2016-11-22 19:21:44"
-        },
-        {
-            "name": "socieboy/alerts",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/socieboy/alerts.git",
-                "reference": "7d4c475ba24013cf2d17f91dcb3d711211e2ec70"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/socieboy/alerts/zipball/7d4c475ba24013cf2d17f91dcb3d711211e2ec70",
-                "reference": "7d4c475ba24013cf2d17f91dcb3d711211e2ec70",
-                "shasum": ""
-            },
-            "type": "package",
-            "autoload": {
-                "psr-4": {
-                    "Socieboy\\Alerts\\": "/src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Francisco Sepulveda",
-                    "email": "socieboy@gmail.com"
-                }
-            ],
-            "description": "Laravel Alerts with SweetAlerts",
-            "time": "2015-11-16 01:11:17"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2336,7 +2303,6 @@
                 "dump"
             ],
             "time": "2017-01-02 20:31:54"
-<<<<<<< HEAD
         },
         {
             "name": "uxweb/sweet-alert",
@@ -2388,8 +2354,6 @@
                 "sweet"
             ],
             "time": "2016-11-23 21:14:35"
-=======
->>>>>>> d91bd8da30685a37f6cfdd1223803d09c0a91c96
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4021,9 +3985,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "socieboy/alerts": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
