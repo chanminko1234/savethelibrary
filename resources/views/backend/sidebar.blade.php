@@ -30,7 +30,8 @@
           
           </ul>
         </li> 
-        @endif
+        @endif --}}
+        <ul class="sidebar-menu">
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>User Management</span>
