@@ -30,7 +30,7 @@
 							
 
 							<td>
-								<a class="btn btn-primary" href="{{ route('role.edit',$role->id) }}">Edit</a>
+								<a class="btn btn-primary" href="{{ route('role.edit', $role->id) }}">Edit</a>
 							</td>
 							
 							<td>

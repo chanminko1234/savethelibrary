@@ -77,9 +77,6 @@ class RoleController extends Controller
         ];
 
         $role->update($credentials);
-
-        $role->updatePermission('role.create');
-        $role->updatePermission('role.update', false, true)->save();
         return redirect()->to('backend/role');
     }
     /**

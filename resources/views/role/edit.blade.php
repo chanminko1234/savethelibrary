@@ -1,4 +1,4 @@
-@extends("layout.app")
+{{-- @extends("layout.app") --}}
 
 @section("content")
 <section class="content-header">
@@ -41,52 +41,68 @@
                              <div class="form-group col-md-3">
                                 <label class="control-label" for="slug">Is Admin</label>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="role_permission[admin]" value="true">admin</label>
+                                    <label><input type="checkbox" name="role_permission[admin]" value="true"  
+                                        @if($role->permissions['admin'] == true)
+                                        checked
+                                        @endif>admin</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group col-md-3">
-                             <label class="control-label" for="slug">User</label>
+                                <div class="form-group col-md-3">
+                                 <label class="control-label" for="slug">User</label>
 
-                             <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[user.show]" value="true">User Show</label>
-                            </div>
+                                 <div class="checkbox">
+                                     <label><input type="checkbox" name="role_permission[user.show]" value="true" @if($role->permissions['user.show'] == true)
+                                        checked
+                                        @endif>User Show</label>
+                                    </div>
 
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[user.create]" value="true">User Create</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[user.edit]" value="true">User Edit</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[user.delete]" value="true">User Delete</label>
-                            </div>
-                        </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="role_permission[user.create]" value="true">User Create</label>
+                                    </div>
 
-                        <div class="form-group col-md-3">
-                            <label class="control-label" for="slug">Role</label>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[role.show]" value="true">Role Show</label>
-                            </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="role_permission[user.edit]" value="true">User Edit</label>
+                                    </div>
 
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[role.create]" value="true">Role Create</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[role.edit]" value="true">Role Edit</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="role_permission[role.delete]" value="true">Role Delete</label>
-                            </div>
-                        </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="role_permission[user.delete]" value="true">User Delete</label>
+                                    </div>
 
-                    </div>
-                    <button type="submit" class="btn btn-primary">Edit</button>
-                </form>
-            </div>                    
-        </div>
-    </div>            
-</div>        
-</div>    
-</div>
-@endsection
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label class="control-label" for="slug">Role</label>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="role_permission[role.show]" value="true" @if($role->permissions['role.show'] == true)
+                                            checked
+                                            @endif>Role Show</label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="role_permission[role.create]" value="true" @if($role->permissions['role.create'] == true)
+                                                checked
+                                                @endif>Role Create</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" name="role_permission[role.edit]" value="true" @if($role->permissions['role.edit'] == true)
+                                                    checked
+                                                    @endif>Role Edit</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" name="role_permission[role.delete]" value="true" @if($role->permissions['role.delete'] == true)
+                                                        checked
+                                                        @endif>Role Delete</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Edit</button>
+                                        </form>
+                                    </div>                    
+                                </div>
+                            </div>            
+                        </div>        
+                    </div>    
+                </div>
+                @endsection
