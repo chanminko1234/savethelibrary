@@ -43,25 +43,10 @@
 
 						@endif
 					</div>
+					
 
 
-					<div class="row">
-						<div class="col-xs-12">
-							<label class="control-label" for="slug">Role</label>      			      			
-							<div class="row">
-
-								@foreach($roles as $role)
-								<div class="col-xs-1">    		
-									<div class="radio">
-										<label>
-											<input type="radio" name="role" value="{{$role->name}}"> {{$role->name}}
-										</label>
-									</div>
-								</div>
-								@endforeach
-							</div>
-						</div>
-					</div>
+				
 
 					<label class="control-label" for="slug">Permission</label>
 					<div class="row">
@@ -100,23 +85,7 @@
 							</div>
 						</div>
 
-						<div class="form-group col-md-3">
-							<label class="control-label" for="slug">Product</label>							
-							<div class="checkbox">
-								<label><input type="checkbox" name="role_permission[product.show]" value="true">product Show</label>
-							</div>
-							
-							<div class="checkbox">
-								<label><input type="checkbox" name="role_permission[product.create]" value="true">product Create</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" name="role_permission[product.edit]" value="true">product Edit</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" name="role_permission[product.delete]" value="true">product Delete</label>
-							</div>
-						</div>
-					</div>
+						
 
 						
 					<div class="row">

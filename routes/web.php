@@ -23,8 +23,6 @@ Route::get('/aboutus','AboutUsController@index');
 Route::get('/bookdetail', 'BookDetailController@index');
 
 
-
-
 Route::group(['prefix' => 'backend'], function () {
 	Route::get('/',"BackendController@index");
 	Route::get('login', "AccessController@getLogin");
@@ -32,9 +30,14 @@ Route::group(['prefix' => 'backend'], function () {
 	Route::post('login', 'AccessController@postLogin');
 	Route::get('register', "AccessController@getRegister");
 	Route::post('register', 'AccessController@postRegister');
-	Route::resource('role', 'RoleController');
-	Route::resource('user', 'UserController');
 	Route::resource('books','BookController');
+
+	Route::get('books/create', ['as' => 'books.create', 'uses' => 'BookController@create']);
+
+	Route::get('books/edit', 'BookController@edit');
+	Route::resource('user','UserController');
+	Route::resource('role','RoleController');
+
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){

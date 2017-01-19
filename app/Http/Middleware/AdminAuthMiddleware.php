@@ -15,7 +15,7 @@ class AdminAuthMiddleware
      */
     public function handle($request, Closure $next)
     {
-    
+        
         if(\Sentinel::inRole("admin") || \Sentinel::inRole("moderator")) {
             return $next($request);    
         }

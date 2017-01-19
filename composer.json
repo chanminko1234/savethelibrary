@@ -9,7 +9,8 @@
         "laravel/framework": "5.3.*",
         "cartalyst/sentinel": "2.0.*",
         "laravel/socialite": "^2.0",
-        "uxweb/sweet-alert": "~1.4"
+        "uxweb/sweet-alert": "~1.4",
+        "socieboy/alerts" : "dev-master"
         },
         "require-dev": {
             "fzaninotto/faker": "~1.4",

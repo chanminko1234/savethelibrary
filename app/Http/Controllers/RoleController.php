@@ -1,16 +1,12 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use \Sentienl\EloquentRole;
 
 class RoleController extends Controller
 {
     public function create()
     {
-
-    	return view('role.create');
+        return view('role.create');
     }
     /**
      * Display a listing of the resource.
@@ -21,9 +17,8 @@ class RoleController extends Controller
     {
        // $role = \Sentinel::getRoleRepository()->pluck('name','name');
         $roles = \Sentinel::getRoleRepository()->get();
-        return view('role.index',compact('roles'));
+        return view('role.index', compact('roles'));
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -32,21 +27,16 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->all());
 
-    	// dd($request->all());
-    	
         $role = \Sentinel::getRoleRepository()->createModel()->create([
-		    'name' => $request->input('role'),
-		    'slug' => $request->input('slug')
-		]);
-
+            'name' => $request->input('role'),
+            'slug' => $request->input('slug')
+            ]);
         $role->permissions = $request->input('role_permission');
         $role->save();
-
-
-       return redirect()->to('backend/role');
+        return redirect()->to('backend/role');
     }
-
     /**
      * Display the specified resource.
      *
@@ -56,10 +46,8 @@ class RoleController extends Controller
     public function show($id)
     {
         $role = \Sentinel::findRoleById($id);
-        
         return view('role.view', compact('role'));
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -69,10 +57,8 @@ class RoleController extends Controller
     public function edit($id)
     {
         $role = \Sentinel::findRoleById($id);
-
-        return view('role.edit',compact('role'));
+        return view('role.edit', compact('role'));
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -83,8 +69,16 @@ class RoleController extends Controller
     public function update(Request $request, $id)
     {
         //
-    }
+        $role = \Sentinel::findById($id);
 
+        $credentials = [
+        'name' => $request->input('role'),
+        'slug' => $request->input('slug')
+        ];
+
+        $role = \Sentinel::update($role, $credentials);
+        return redirect()->to('backend/role');
+    }
     /**
      * Remove the specified resource from storage.
      *
@@ -94,5 +88,9 @@ class RoleController extends Controller
     public function destroy($id)
     {
         //
+        $role = \Sentinel::findById($id);
+        $role->delete();
+        return redirect()->to('backend/role');
+
     }
 }

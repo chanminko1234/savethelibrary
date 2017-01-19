@@ -14,57 +14,58 @@
 
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
-    <ul class="sidebar-menu">
-      <li class="header">MAIN NAVIGATION</li>
-      {{-- @if(\Sentinel::hasAccess('product.show')) --}}
-      <li class="treeview">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Product</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="active" ><a href="{{ url('backend/product') }}"><i class="fa fa-circle-o"></i> List</a></li>
-          <li><a href="{{ url('backend/product/create') }}"><i class="fa fa-circle-o"></i> Create Product</a></li>
+     {{--  <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        @if(\Sentinel::hasAccess('product.show'))
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Product</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active" ><a href="{{ url('backend/product') }}"><i class="fa fa-circle-o"></i> List</a></li>
+            <li><a href="{{ url('backend/product/create') }}"><i class="fa fa-circle-o"></i> Create Product</a></li>
           
-        </ul>
-      </li> 
-      {{-- @endif --}}
-      <li class="treeview">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>User Management</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="{{ url('backend/user') }}"><i class="fa fa-circle-o"></i> User List</a></li>
-          <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
-        </ul>
-      </li>
+          </ul>
+        </li> 
+        @endif --}}
+        <ul class="sidebar-menu">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>User Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+           <ul class="treeview-menu">
+            <li><a href="{{ url('backend/user') }}"><i class="fa fa-circle-o"></i> User List</a></li>
+            <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
+          </ul>
+        </li>
 
-      <li class="treeview">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Access Management</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="{{ url('backend/role') }}"><i class="fa fa-circle-o"></i> Role List</a></li>
-          <li><a href="{{ url('backend/role/create') }}"><i class="fa fa-circle-o"></i> Create Role</a></li>
-        </ul>
-      </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Access Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+           <ul class="treeview-menu">
+            <li><a href="{{ url('backend/role') }}"><i class="fa fa-circle-o"></i> Role List</a></li>
+            <li><a href="{{ url('backend/role/create') }}"><i class="fa fa-circle-o"></i> Create Role</a></li>
+          </ul>
+        </li>
 
 
-      
-      
+        
+       
 
         {{-- <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Product</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li> --}}
       </ul>
     </section>
     <!-- /.sidebar -->

@@ -19,10 +19,6 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{ asset('dist/css/skins/_all-skins.min.css') }}">
-  <!-- summernote-->
-  <link rel="stylesheet" href="{{asset('css/summernote.css')}}">
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,28 +69,5 @@
 	<script src="{{ asset('dist/js/pages/dashboard2.js') }}"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="{{ asset('dist/js/demo.js') }}"></script>
-
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
-
-
-
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#summernote').summernote({
-				height:200,
-			});
-		});
-
-		$(document).ready(function() {
-			$('#summernote2').summernote({
-				height:200,
-			});
-		});
-
-		$("#content").summernote()
-		$('.dropdown-toggle').dropdown()
-
-	</script>
 </body>
 </html>

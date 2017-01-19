@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
 class UserController extends Controller
 {
     /**
@@ -48,9 +48,9 @@ class UserController extends Controller
             ]);
 
         $credentials = [
-            'first_name'    => $request->input('name'),
-            'email'         => $request->input('email'),
-            'password'      => $request->input('password'),
+        'first_name'    => $request->input('name'),
+        'email'         => $request->input('email'),
+        'password'      => $request->input('password'),
         ];
 
         $user = \Sentinel::registerAndActivate($credentials);
@@ -71,6 +71,9 @@ class UserController extends Controller
     public function show($id)
     {
         //
+        $user = \Sentinel::findUserById($id);
+        
+        return view('user.view', compact('user'));
     }
 
     /**
@@ -81,8 +84,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
-    }
+       $user = \Sentinel::findUserById($id);
+       return view('user.edit',compact('user'));
+   }
 
     /**
      * Update the specified resource in storage.
@@ -94,6 +98,16 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $user = \Sentinel::findById($id);
+
+        $credentials = [
+        'first_name'    => $request->input('name'),
+        'email'         => $request->input('email'),
+        ];
+
+        $user = \Sentinel::update($user, $credentials);
+        
+        return redirect()->to('backend/user');
     }
 
     /**
@@ -105,5 +119,8 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+        $user = \Sentinel::findById($id);
+        $user->delete();
+        return redirect()->to('backend/user');
     }
 }
