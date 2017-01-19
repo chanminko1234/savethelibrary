@@ -36,7 +36,7 @@
 							</td>
 							
 							<td>
-								<form action="{{ route('user.destroy', '1') }}" method="post">
+								<form action="{{ route('user.destroy', $user->id) }}" method="post">
 									{{ csrf_field() }}
 									{{ method_field('delete') }}
 									<button class="btn btn-danger">Delete</button>

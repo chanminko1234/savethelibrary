@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 class UserController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -84,9 +85,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-       $user = \Sentinel::findUserById($id);
-       return view('user.edit',compact('user'));
-   }
+     $user = \Sentinel::findUserById($id);
+     return view('user.edit',compact('user'));
+ }
 
     /**
      * Update the specified resource in storage.
@@ -119,8 +120,9 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
-        $user = \Sentinel::findById($id);
-        $user->delete();
+        $user = \Sentinel::findUserById($id);
+
+        $user->delete($id);
         return redirect()->to('backend/user');
     }
 }

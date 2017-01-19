@@ -34,7 +34,7 @@
 							</td>
 							
 							<td>
-								<form action="{{ route('role.destroy', '1') }}" method="post">
+								<form action="{{ route('role.destroy', $role->id) }}" method="post">
 									{{ csrf_field() }}
 									{{ method_field('delete') }}
 									<button class="btn btn-danger">Delete</button>
@@ -58,11 +58,11 @@
 			</td>
 		</tr>
 		@endforeach --}}
-					
-				</table>
-			</div>
-		</div>
-	</div>
+		
+	</table>
+</div>
+</div>
+</div>
 </div>
 
 @endsection

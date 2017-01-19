@@ -23,13 +23,14 @@ Route::get('/aboutus','AboutUsController@index');
 Route::get('/bookdetail', 'BookDetailController@index');
 
 
-Route::group(['prefix' => 'backend'], function () {
-	Route::get('/',"BackendController@index");
-	Route::get('login', "AccessController@getLogin");
-	Route::get("logout", "AccessController@logout");
-	Route::post('login', 'AccessController@postLogin');
-	Route::get('register', "AccessController@getRegister");
-	Route::post('register', 'AccessController@postRegister');
+Route::get('backend/login', "AccessController@getLogin");
+Route::get("backend/logout", "AccessController@logout");
+Route::post('backend/login', 'AccessController@postLogin');
+Route::get('backend/register', "AccessController@getRegister");
+Route::post('backend/register', 'AccessController@postRegister');
+
+Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], function () {
+	Route::get('/','BackendController@index');
 	Route::resource('books','BookController');
 
 	Route::get('books/create', ['as' => 'books.create', 'uses' => 'BookController@create']);

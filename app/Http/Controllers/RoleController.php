@@ -69,14 +69,17 @@ class RoleController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $role = \Sentinel::findById($id);
+        $role = \Sentinel::findRoleById($id);
 
         $credentials = [
-        'name' => $request->input('role'),
+        'name' => $request->input('name'),
         'slug' => $request->input('slug')
         ];
 
-        $role = \Sentinel::update($role, $credentials);
+        $role->update($credentials);
+
+        $role->updatePermission('role.create');
+        $role->updatePermission('role.update', false, true)->save();
         return redirect()->to('backend/role');
     }
     /**
@@ -88,8 +91,9 @@ class RoleController extends Controller
     public function destroy($id)
     {
         //
-        $role = \Sentinel::findById($id);
+        $role = \Sentinel::findRoleById($id);
         $role->delete();
+
         return redirect()->to('backend/role');
 
     }
