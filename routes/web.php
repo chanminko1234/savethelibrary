@@ -29,6 +29,8 @@ Route::post('backend/login', 'AccessController@postLogin');
 Route::get('backend/register', "AccessController@getRegister");
 Route::post('backend/register', 'AccessController@postRegister');
 
+
+
 Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], function () {
 	Route::get('/','BackendController@index');
 	Route::resource('books','BookController');
@@ -38,7 +40,7 @@ Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], fu
 	Route::get('books/edit', 'BookController@edit');
 	Route::resource('user','UserController');
 	Route::resource('role','RoleController');
-
+	Route::resource('category', 'CategoryController');
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){

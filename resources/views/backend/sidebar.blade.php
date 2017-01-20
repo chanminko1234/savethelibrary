@@ -22,7 +22,7 @@
 <ul class="sidebar-menu">
   <li class="treeview">
     <a href="#">
-      <i class="fa fa-dashboard"></i> <span>User Management</span>
+      <i class="fa fa-users"></i> <span>User Management</span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
@@ -32,7 +32,18 @@
       <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
     </ul>
   </li>
-
+  <li class="treeview">
+    <a href="#">
+      <i class="fa fa-dashboard"></i> <span>Category</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+      <li><a href="{{ url('backend/category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
+      <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category User</a></li>
+    </ul>
+  </li>
   <li class="treeview">
     <a href="#">
       <i class="fa fa-dashboard"></i> <span>Access Management</span>

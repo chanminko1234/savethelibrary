@@ -1,10 +1,8 @@
-@extends("layout.app")
-
-@section("content")
+@extends('layout.app')
+@section('content')
 <section class="content-header">
 	<h1>
-		Role
-		<small>List</small>
+		Category
 	</h1>
 </section>
 <div class="row">
@@ -15,25 +13,25 @@
 					<thead>
 						<tr>
 							<th>ID</th>
-							<th>Role Name</th>
+							<th>Category Name</th>
 							<th></th>
 							<th></th>
 						</tr>
 					</thead>
 					<tbody>
-						@foreach($roles as $role)
+						@foreach($categories as $category)
 						<tr>
-							<td>{{ $role->id }}</td>
+							<td>{{ $category->id }}</td>
 							
-							<td>{{ $role->name }}</td>
+							<td>{{ $category->category_name }}</td>
 
 
 							<td>
-								<a class="btn btn-primary" href="{{ route('role.edit', $role->id) }}">Edit</a>
+								<a class="btn btn-primary" href="{{ route('category.edit', $category->id) }}">Edit</a>
 							</td>
 							
 							<td>
-								<form action="{{ route('role.destroy', $role->id) }}" method="post">
+								<form action="{{ route('category.destroy', $category->id) }}" method="post">
 									{{ csrf_field() }}
 									{{ method_field('delete') }}
 									<button class="btn btn-danger">Delete</button>
@@ -48,5 +46,17 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 @endsection
