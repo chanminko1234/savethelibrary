@@ -19,47 +19,65 @@
 {{--         @if(\Sentinel::hasAccess('product.show'))
 --}}       
 {{--       @endif --}}
+
+
 <ul class="sidebar-menu">
+
   <li class="treeview">
     <a href="#">
-      <i class="fa fa-users"></i> <span>User Management</span>
-      <span class="pull-right-container">
-        <i class="fa fa-angle-left pull-right"></i>
-      </span>
-    </a>
-    <ul class="treeview-menu">
-      <li><a href="{{ url('backend/user') }}"><i class="fa fa-circle-o"></i> User List</a></li>
-      <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
-    </ul>
-  </li>
-  <li class="treeview">
-    <a href="#">
-      <i class="fa fa-dashboard"></i> <span>Category</span>
-      <span class="pull-right-container">
-        <i class="fa fa-angle-left pull-right"></i>
-      </span>
-    </a>
-    <ul class="treeview-menu">
-      <li><a href="{{ url('backend/category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
-      <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category User</a></li>
-    </ul>
-  </li>
-  <li class="treeview">
-    <a href="#">
-      <i class="fa fa-dashboard"></i> <span>Access Management</span>
-      <span class="pull-right-container">
-        <i class="fa fa-angle-left pull-right"></i>
-      </span>
-    </a>
-    <ul class="treeview-menu">
-      <li><a href="{{ url('backend/role') }}"><i class="fa fa-circle-o"></i> Role List</a></li>
-      <li><a href="{{ url('backend/role/create') }}"><i class="fa fa-circle-o"></i> Create Role</a></li>
-    </ul>
-  </li>
+     <i class="fa fa-book" aria-hidden="true"></i>
+   </i> <span>Books</span>
+   <span class="pull-right-container">
+    <i class="fa fa-angle-left pull-right"></i>
+  </span>
+</a>
+<ul class="treeview-menu">
+  <li class="active" ><a href="{{ url('backend/marketing-image') }}"><i class="fa fa-circle-o"></i>Books List</a></li>
+  <li><a href="{{ url('backend/marketing-image/create') }}"><i class="fa fa-circle-o"></i> Create Books</a></li>
+  
+</ul>
+</li> 
+
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-users"></i> <span>User Management</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/user') }}"><i class="fa fa-circle-o"></i> User List</a></li>
+    <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
+  </ul>
+</li>
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-dashboard"></i> <span>Category</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
+    <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category User</a></li>
+  </ul>
+</li>
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-dashboard"></i> <span>Access Management</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/role') }}"><i class="fa fa-circle-o"></i> Role List</a></li>
+    <li><a href="{{ url('backend/role/create') }}"><i class="fa fa-circle-o"></i> Create Role</a></li>
+  </ul>
+</li>
 
 
-  
-  
+
+
 
         {{-- <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Product</span></a></li>

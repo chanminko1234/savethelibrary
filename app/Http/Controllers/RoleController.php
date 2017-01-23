@@ -27,7 +27,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
+        // dd($request->all());
 
         $role = \Sentinel::getRoleRepository()->createModel()->create([
             'name' => $request->input('role'),
@@ -73,7 +73,8 @@ class RoleController extends Controller
 
         $credentials = [
         'name' => $request->input('name'),
-        'slug' => $request->input('slug')
+        'slug' => $request->input('slug'),
+        'permissions' => $request->input('role_permission')
         ];
 
         $role->update($credentials);

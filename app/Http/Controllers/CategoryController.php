@@ -70,9 +70,9 @@ class CategoryController extends Controller
     public function edit($id)
     {
         //
-     $category = Category::findOrFail($id);
-     return view('category.edit', compact('category'));;
- }
+       $category = Category::findOrFail($id);
+       return view('category.edit', compact('category'));;
+   }
 
     /**
      * Update the specified resource in storage.
@@ -103,6 +103,7 @@ class CategoryController extends Controller
     {
         //
         Category::destroy($id);
+        alert()->overlay('Attention!', 'You deleted a category', 'error');
         return redirect()->to('backend/category');
     }
 }

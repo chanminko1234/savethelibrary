@@ -19,7 +19,14 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{ asset('dist/css/skins/_all-skins.min.css') }}">
+  <!-- summernote-->
+  <link rel="stylesheet" href="{{asset('css/summernote.css')}}">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
 
+  <!-- sweet alert-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+  @include('layout.css')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -48,6 +55,9 @@
 			reserved.
 		</footer>
 	</div>
+
+	<!-- sweet alert-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 	<!-- jQuery 2.2.3 -->
 	<script src="{{ asset('plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
 	<!-- Bootstrap 3.3.6 -->
@@ -69,5 +79,40 @@
 	<script src="{{ asset('dist/js/pages/dashboard2.js') }}"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="{{ asset('dist/js/demo.js') }}"></script>
+	<!-- summernote-->
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+
+	@yield('scripts')
+
+	@include('sweet::alert')
+
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#summernote').summernote({
+				height:200,
+			});
+		});
+
+		$(document).ready(function() {
+			$('#summernote2').summernote({
+				height:200,
+			});
+		});
+
+		$(document).ready(function() {
+			$('#summernote3').summernote({
+				height:200,
+			});
+		});
+
+		$("#content").summernote()
+		$('.dropdown-toggle').dropdown()
+
+	</script>
 </body>
 </html>

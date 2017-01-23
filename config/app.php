@@ -169,6 +169,8 @@ return [
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
         //
 
         /*
@@ -231,7 +233,10 @@ return [
     'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
     'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
     'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-    'Alert' => UxWeb\SweetAlert\SweetAlert::class
+    'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+    'Image'=> Intervention\Image\Facades\Image::class,
+    'Form' => Collective\Html\FormFacade::class,
+    'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

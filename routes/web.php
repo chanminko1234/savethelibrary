@@ -33,14 +33,11 @@ Route::post('backend/register', 'AccessController@postRegister');
 
 Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], function () {
 	Route::get('/','BackendController@index');
-	Route::resource('books','BookController');
-
-	Route::get('books/create', ['as' => 'books.create', 'uses' => 'BookController@create']);
-
-	Route::get('books/edit', 'BookController@edit');
 	Route::resource('user','UserController');
 	Route::resource('role','RoleController');
 	Route::resource('category', 'CategoryController');
+	Route::resource('library-slider','LibrarySliderController');
+	Route::resource('marketing-image', 'MarketingImageController');
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){
