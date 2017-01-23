@@ -14,12 +14,12 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th>ID</th>
-							<th>User Name</th>
-							<th>Email</th>
-							<th>Role</th>
-							<th></th>
-							<th></th>
+							<td>ID</td>
+							<td>User Name</td>
+							<td>Email</td>
+							<td>Role</td>
+							<td></td>
+							<td></td>
 						</tr>
 					</thead>
 					<tbody>
@@ -28,9 +28,7 @@
 							<td>{{ $user->id }}</td>
 							<td><a href="{{ route('user.show', $user->id) }}">{{ $user->first_name }}</a></td>
 							<td>{{ $user->email }}</td>
-
 							<td>{{ $user->roles }}</td>
-
 							<td>
 								<a class="btn btn-primary" href="{{ route('user.edit',$user->id) }}">Edit</a>
 							</td>

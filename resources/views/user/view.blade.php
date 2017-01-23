@@ -46,7 +46,7 @@
 					
 
 
-				
+
 
 					<label class="control-label" for="slug">Permission</label>
 					<div class="row">
@@ -83,11 +83,9 @@
 							<div class="checkbox">
 								<label><input type="checkbox" name="role_permission[role.delete]" value="true">Role Delete</label>
 							</div>
-						</div>
+						</div>	
+					</div>
 
-						
-
-						
 					<div class="row">
 						<div class="col-xs-4">
 							<button type="submit" class="btn btn-primary btn-block btn-flat">Create</button>

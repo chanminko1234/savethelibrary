@@ -12,10 +12,10 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th>ID</th>
-							<th>Category Name</th>
-							<th></th>
-							<th></th>
+							<td>ID</td>
+							<td>Category Name</td>
+							<td></td>
+							<td></td>
 						</tr>
 					</thead>
 					<tbody>
