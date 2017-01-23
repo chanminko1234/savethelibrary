@@ -44,6 +44,7 @@ class CategoryController extends Controller
             'category_name' => 'required|min:4'
             ]);
         Category::create($request->all());
+        alert()->success('Congrats!', 'Category Created!');
         return redirect()->to('backend/category');
 
     }
@@ -70,9 +71,9 @@ class CategoryController extends Controller
     public function edit($id)
     {
         //
-       $category = Category::findOrFail($id);
-       return view('category.edit', compact('category'));;
-   }
+     $category = Category::findOrFail($id);
+     return view('category.edit', compact('category'));;
+ }
 
     /**
      * Update the specified resource in storage.
@@ -90,6 +91,7 @@ class CategoryController extends Controller
         $category = Category::findOrFail($id);
         $category->update(['category_name' => $request->category_name
           ]);
+        alert()->success('Congrats!', 'category edited!');
         return redirect()->to('backend/category');
     }
 
@@ -103,7 +105,7 @@ class CategoryController extends Controller
     {
         //
         Category::destroy($id);
-        alert()->overlay('Attention!', 'You deleted a category', 'error');
+        alert()->error('Notice', 'category deleted!');
         return redirect()->to('backend/category');
     }
 }

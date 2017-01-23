@@ -78,8 +78,7 @@
                 </div>
 
 
-                <br>
-                <br>
+
 
                 <div class="form-group{{ $errors->has('library_name') ? ' has-error' : '' }}">
 
@@ -94,10 +93,6 @@
                     @endif
                 </div>
 
-
-                <br>
-                <br>
-
                 <div class="form-group{{ $errors->has('library_address') ? ' has-error' : '' }}">
                     <label class="control-label">Library Address</label>
                     <textarea class="form-control" rows="5" name="library_address" value="{{ old('library_address') }}"></textarea> 
@@ -109,9 +104,6 @@
                     @endif
 
                 </div>
-
-                <br>
-                <br>
 
 
 
@@ -125,9 +117,6 @@
                         <strong>{{ $errors->first('library_contact') }}</strong>
                     </span>
                     @endif
-
-                    <br>
-                    <br>
 
                 </div>
 
@@ -149,9 +138,6 @@
                         @endif
 
                     </div>
-
-                    <br>
-                    <br>
 
 
                     
@@ -202,10 +188,7 @@
                             @endif
 
                         </div>
-
-
                         <!-- is_active Form Input -->
-
                         <div class="form-group{{ $errors->has('is_active') ?
                             ' has-error' : '' }}">
                             <label class="control-label">Is Active</label>
@@ -223,8 +206,6 @@
                                 </span>
                                 @endif
                             </div>
-
-
                             <!-- is_featured Form Input -->
                             <div class="form-group{{ $errors->has('is_featured') ?
                                 ' has-error' : '' }}">
@@ -243,9 +224,7 @@
                                     </span>
                                     @endif
                                 </div>
-
                                 <!-- image file Form Input -->
-
                                 <div class="form-group">
                                     <label class="control-label">Primary Image
                                     </label>
@@ -258,26 +237,12 @@
                                 </span>
                                 @endif
                             </div>
-
-
-
-
-
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg">
                                     Create
                                 </button>
                             </div>
                         </form>
-
-
-
-
-
-
-
-
                     </div>
                 </div>
             </div>

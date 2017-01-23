@@ -35,6 +35,7 @@ class RoleController extends Controller
             ]);
         $role->permissions = $request->input('role_permission');
         $role->save();
+        alert()->success('Congrats!', 'Role Created!');
         return redirect()->to('backend/role');
     }
     /**
@@ -78,6 +79,7 @@ class RoleController extends Controller
         ];
 
         $role->update($credentials);
+        alert()->success('Congrats!', 'role edited!');
         return redirect()->to('backend/role');
     }
     /**
@@ -91,7 +93,7 @@ class RoleController extends Controller
         //
         $role = \Sentinel::findRoleById($id);
         $role->delete();
-
+        alert()->error('Notice', 'role deleted!');
         return redirect()->to('backend/role');
 
     }
