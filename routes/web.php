@@ -17,7 +17,7 @@ Route::resource('/', 'LibraryController');
 Route::get('/libraries', 'LibrariesController@index');
 Route::get('/latest', 'LatestController@index');
 Route::get('/latestreview', 'LatestReviewController@index');
-Route::get('/resourcecenter', 'ResourceCenterController@index');
+Route::get('/resourcecenter', 'LatestViewController@index');
 Route::get('/aboutus','AboutUsController@index');
 
 Route::get('/bookdetail', 'BookDetailController@index');
@@ -38,6 +38,7 @@ Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], fu
 	Route::resource('category', 'CategoryController');
 	Route::resource('library-slider','LibrarySliderController');
 	Route::resource('marketing-image', 'MarketingImageController');
+	Route::resource('resourcecenter-image', 'ResourceCenterController');
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){

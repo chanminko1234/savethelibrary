@@ -114,6 +114,7 @@ class MarketingImageController extends Controller
             $this->deleteExistingImages($marketingImage);
             $this->setNewFileExtension($request, $marketingImage);
         }
+        
         $marketingImage->save();
         // check for file, if new file, overwrite existing file
         if ($this->newFileIsUploaded()){

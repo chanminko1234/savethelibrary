@@ -16,8 +16,8 @@
 						<tr>
 							<td>ID</td>
 							<td>Role Name</td>
-							<td></td>
-							<td></td>
+							<th></th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>

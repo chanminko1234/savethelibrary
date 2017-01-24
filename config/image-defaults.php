@@ -19,4 +19,13 @@ return [
     'thumbHeight'           => 100,
     'thumbWidth'            => 100,
     ],
+    'resourcecenterImage'=>[
+    'destinationFolder'     => '/imgs/resourcecenter/',
+    'destinationThumbnail'      => '/imgs/resourcecenter/thumbnails/',
+    'thumbPrefix'           => 'thumb-',
+    'imagePath'             => '/imgs/resourcecenter/',
+    'thumbnailPath'         => '/imgs/resourcecenter/thumbnails/thumb-',
+    'thumbHeight'           => 100,
+    'thumbWidth'            => 100,
+    ],
     ];
