@@ -10,18 +10,12 @@
 
  <!-- delete button -->
 
-
- <div class="col-md-6">
+ <div class="form-group pull-right">
    <form class="form" role="form" method="POST" action="{{ url('backend/marketing-image/'. $marketingImage->id) }}">
     <input type="hidden" name="_method" value="delete">
     {{ csrf_field() }}
+    <input class="btn btn-lg btn-danger" Onclick="return ConfirmDelete();" type="submit" value="Delete">
 </form>
-</div>
-<div class="form-group pull-right">
-    <div class="col-md-6">
-        <input class="btn btn-lg btn-danger" Onclick="return ConfirmDelete();" type="submit" value="Delete">
-    </div>
-
 </div>
 
 <!-- image name no input -->

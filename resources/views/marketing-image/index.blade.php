@@ -50,7 +50,6 @@ Sorry, no Marketing Images
 @endif
 
 {{ $marketingImages->links() }}
-
 <div> <a href="{{url('backend/marketing-image/create')}}">
   <button type="button" class="btn btn-lg btn-primary">
     Create New

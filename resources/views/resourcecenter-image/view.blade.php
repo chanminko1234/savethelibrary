@@ -4,7 +4,7 @@
 <div class="container">
     <div class="col-md-12">
 
-        <h1>{{ $resourcecenterImage->book_name }} Resource Center Image</h1>
+        <h1>Resource Center Image</h1>
 
         <div class="pull-left">
 

@@ -28,4 +28,13 @@ return [
     'thumbHeight'           => 100,
     'thumbWidth'            => 100,
     ],
+    'librarysliderImage'=>[
+    'destinationFolder'     => '/imgs/libraryslider/',
+    'destinationThumbnail'      => '/imgs/libraryslider/thumbnails/',
+    'thumbPrefix'           => 'thumb-',
+    'imagePath'             => '/imgs/libraryslider/',
+    'thumbnailPath'         => '/imgs/libraryslider/thumbnails/thumb-',
+    'thumbHeight'           => 100,
+    'thumbWidth'            => 100,
+    ],
     ];

@@ -3,14 +3,14 @@ namespace App\Http\Controllers;
 use App\Traits\ManagesImages;
 use App\Http\Requests\CreateLibraryImageRequest;
 use App\LibrarySlider;
-use App\Http\Requests\EditImageRequest;
+use App\Http\Requests\LibraryImageEditRequest;
 class LibrarySliderController extends Controller
 {
     use ManagesImages;
     public function __construct()
     {
 
-        $this->setImageDefaultsFromConfig('marketingImage');
+        $this->setImageDefaultsFromConfig('librarysliderImage');
 
 
     }
@@ -22,8 +22,8 @@ class LibrarySliderController extends Controller
     public function index()
     {     
         $thumbnailPath = $this->thumbnailPath;
-        $LibrySliderImage = LibrarySlider::paginate(5);
-        return view('library-slider.index', compact('LibrySliderImage', 'thumbnailPath'));
+        $LibrySliderImages = LibrarySlider::paginate(5);
+        return view('library-slider.index', compact('LibrySliderImages', 'thumbnailPath'));
     }
     /**
      * Show the form for creating a new resource.
@@ -44,8 +44,10 @@ class LibrarySliderController extends Controller
     public function store(CreateLibraryImageRequest $request)
     {      
         //create new instance of model to save from form
-        
+
         $slug = str_slug($request->get('library_name'), "-");
+
+
 
         $LibrySliderImage = new LibrarySlider([
             'library_name'      =>$request->get('library_name'),
@@ -53,11 +55,12 @@ class LibrarySliderController extends Controller
             'library_address'   =>$request->get('library_address'),
             'library_contact'   =>$request->get('library_contact'),
             'library_description' =>$request->get('library_description'),
-            'image_name'        => $request->get('image_name'),
-            'image_extension'   => $request->file('image')->getClientOriginalExtension(),
-            'is_active'         => $request->get('is_active'),
-            'is_featured'       => $request->get('is_featured')
+            'image_extension'   => $request->file('image')->getClientOriginalExtension()
             ]);
+
+
+
+
         // save model
         $LibrySliderImage->save();
         // get instance of file
@@ -65,7 +68,7 @@ class LibrarySliderController extends Controller
         // pass in the file and the model
         $this->saveImageFiles($file, $LibrySliderImage);
         alert()->success('Congrats!', 'Book Image And Thumbnail Created!');
-        return redirect()->route('library-slider.show', [$LibrySliderImage]);
+        return redirect()->route('library-slider.index', [$LibrySliderImage]);
     }
     /**
      * Display the specified resource.
@@ -91,7 +94,7 @@ class LibrarySliderController extends Controller
     {
         $LibrySliderImage = LibrarySlider::findOrFail($id);
         $thumbnailPath = $this->thumbnailPath;
-        return view('marketing-image.edit', compact('LibrySliderImage', 'thumbnailPath'));
+        return view('library-slider.edit', compact('LibrySliderImage', 'thumbnailPath'));
     }
     /**
      * Update the specified resource in storage.
@@ -100,7 +103,7 @@ class LibrarySliderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($id, EditImageRequest $request)
+    public function update($id, LibraryImageEditRequest $request)
     {
         $LibrySliderImage = LibrarySlider::findOrFail($id);
         $this->setUpdatedModelValues($request, $LibrySliderImage);
@@ -109,7 +112,14 @@ class LibrarySliderController extends Controller
             $this->deleteExistingImages($LibrySliderImage);
             $this->setNewFileExtension($request,$LibrySliderImage);
         }
-        $LibrySliderImage->save();
+        $LibrySliderImage->update([
+            'library_name'      =>$request->input('library_name'),
+            'library_address'   =>$request->input('library_address'),
+            'library_contact'   =>$request->input('library_contact'),
+            'library_description' =>$request->input('library_description')
+            ]); 
+
+        $LibrySliderImage->update($request->all());
         // check for file, if new file, overwrite existing file
         if ($this->newFileIsUploaded()){
             $file = $this->getUploadedFile();
@@ -117,7 +127,7 @@ class LibrarySliderController extends Controller
         }
         $thumbnailPath = $this->thumbnailPath;
         $imagePath = $this->imagePath;
-        alert()->success('Congrats!', 'Book edited!');
+        alert()->success('Congrats!', 'Library edited!');
         return view('library-slider.show', compact('LibrySliderImage', 'thumbnailPath', 'imagePath'));
     }
     /**
@@ -136,19 +146,17 @@ class LibrarySliderController extends Controller
     }
     /**
      * @param EditImageRequest $request
-     * @param $marketingImage
+     * @param $LibrySliderImage
      */
-    private function setNewFileExtension(EditImageRequest $request,$LibrySliderImage)
+    private function setNewFileExtension(LibraryImageEditRequest $request,$LibrySliderImage)
     {
         $LibrySliderImage->image_extension = $request->file('image')->getClientOriginalExtension();
     }
     /**
      * @param EditImageRequest $request
-     * @param $marketingImage
+     * @param $LibrySliderImage
      */
-    private function setUpdatedModelValues(EditImageRequest $request,$LibrySliderImage)
+    private function setUpdatedModelValues(LibraryImageEditRequest $request,$LibrySliderImage)
     {
-        $LibrySliderImage->is_active = $request->get('is_active');
-        $LibrySliderImage->is_featured = $request->get('is_featured');
     }
 }

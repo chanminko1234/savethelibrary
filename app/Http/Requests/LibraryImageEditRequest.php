@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
-class CreateLibraryImageRequest extends FormRequest
+class LibraryImageEditRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -9,7 +9,7 @@ class CreateLibraryImageRequest extends FormRequest
      * @return bool
      */
     public function authorize()
-    {     
+    {
         return true;
     }
     /**
@@ -19,12 +19,12 @@ class CreateLibraryImageRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-        'library_name'      =>'required',
-        'library_address'   =>'required',
-        'library_contact'   =>'required',
-        'library_description' =>'required',
-        'image' => 'required|mimes:jpeg,jpg,bmp,png|max:1000'
+        return [   'library_name' ,   
+        'library_slug' ,   
+        'library_address',   
+        'library_contact' , 
+        'library_description',
+        'image' => 'mimes:jpeg,jpg,bmp,png|max:1000'
         ];
     }
 }
