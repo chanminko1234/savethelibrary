@@ -15,8 +15,8 @@
 			<thead>
 				<td>Id</td>
 				<td>Thumbnail</td>
-				<td>Name</td>
-				<td>Category_Name</td>
+				<td>Book Name</td>
+				<td>Category Name</td>
 				<td>Download</td>
 				<td>Date Created</td>
 			</thead>
@@ -28,7 +28,7 @@
 				<tr>
 					<td><a href="{{url('backend/resourcecenter-image/'. $resourcecenterImage->id.'/edit')}}">{{ $resourcecenterImage->id }}</a></td>
 					<td><a href="{{ url('backend/resourcecenter-image/'. $resourcecenterImage->id) }}"><img src="{{ $resourcecenterImage->showImage($resourcecenterImage, $thumbnailPath) }}"></a></td>
-					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->image_name }}</a></td>
+					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->book_name }}</a></td>
 					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->category_name }}</a></td>
 					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->download }}</a></td>
 					<td>{{ $resourcecenterImage->created_at }}</td>

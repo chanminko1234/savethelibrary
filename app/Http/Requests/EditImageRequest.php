@@ -19,17 +19,7 @@ class EditImageRequest extends FormRequest
      */
     public function rules()
     {
-        return ['book_name',
-        'slug',
-        'author',
-        'category',
-        'book_description',
-        'book_review',
-        'library_name',
-        'library_address',
-        'library_contact',
-        'is_active' => 'required|boolean',
-        'is_featured' => 'required|boolean',
+        return [
         'image' => 'mimes:jpeg,jpg,bmp,png|max:1000'
         ];
     }

@@ -24,7 +24,7 @@ class CreateResourceCenterImageRequest extends FormRequest
     public function rules()
     {
         return [
-        'image_name' => 'alpha_num|required|unique:resource_center_images',
+        'book_name' => 'required|unique:marketing_images|string|max:50',
         'category_name' => 'required',
         'image' => 'required|mimes:jpeg,jpg,bmp,png|max:1000',
         'download' => 'required'

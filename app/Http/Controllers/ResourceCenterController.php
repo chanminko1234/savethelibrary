@@ -49,9 +49,9 @@ class ResourceCenterController extends Controller
     public function store(CreateResourceCenterImageRequest $request)
     {
         //
-        $slug = str_slug($request->get('image_name'), "-");
+        $slug = str_slug($request->get('book_name'), "-");
         $resourcecenterImage = new ResourceCenterImage([
-            'image_name'=> $request->get('image_name'),
+            'book_name'=> $request->get('book_name'),
             'slug'                     =>$slug,
             'category_name'=>$request->get('category_name'),
             'image_extension'=> $request->file('image')
@@ -118,7 +118,7 @@ class ResourceCenterController extends Controller
         }
 
         $resourcecenterImage->update([
-            'image_name' => $request->input('image_name'),
+            'book_name' => $request->input('book_name'),
             'category_name' => $request->input('category_name')
             ]); 
 

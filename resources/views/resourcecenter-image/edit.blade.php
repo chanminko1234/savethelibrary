@@ -53,14 +53,14 @@
      <input type="hidden" name="_method" value="patch">
 
      {{ csrf_field() }}
-     <!-- image_name Form Input -->
-     <div class="form-group{{ $errors->has('image_name') ? ' has-error' : '' }}">
+     <!-- book_name Form Input -->
+     <div class="form-group{{ $errors->has('book_name') ? ' has-error' : '' }}">
         <label class="control-label">Image Name</label>
-        <input type="text" class="form-control" name="image_name"
-        value="{{ $resourcecenterImage->image_name }}">
-        @if ($errors->has('image_name'))
+        <input type="text" class="form-control" name="book_name"
+        value="{{ $resourcecenterImage->book_name }}">
+        @if ($errors->has('book_name'))
         <span class="help-block">
-            <strong>{{ $errors->first('image_name') }}</strong>
+            <strong>{{ $errors->first('book_name') }}</strong>
         </span>
         @endif
     </div>

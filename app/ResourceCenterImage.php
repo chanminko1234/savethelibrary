@@ -8,7 +8,7 @@ class ResourceCenterImage extends Model
 {
 	use ShowsImages;
     //
-	protected $fillable = ['image_name',
+	protected $fillable = ['book_name',
 	'slug',
 	'category_name',
 	'image_extension',

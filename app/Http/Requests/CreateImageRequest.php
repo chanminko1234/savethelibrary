@@ -22,15 +22,11 @@ class CreateImageRequest extends FormRequest
         return [
         'book_name' =>'required|unique:marketing_images|string|max:50',
         'author'    =>'required|string|max:30',
-        'category'  =>'required|string',
         'book_description'  =>'required',
         'book_review'       =>'required',
         'library_name'      =>'required',
         'library_address'   =>'required',
         'library_contact'   =>'required',
-        'image_name' => 'alpha_num|required|unique:marketing_images',
-        'is_active' => 'required|boolean',
-        'is_featured' => 'required|boolean',
         'image' => 'required|mimes:jpeg,jpg,bmp,png|max:1000',
         ];
     }

@@ -6,14 +6,14 @@
 		<hr/>
 		<form class="form" role="form" method="POST" action="{{ url('backend/resourcecenter-image') }}" enctype="multipart/form-data">
 			{{ csrf_field() }} 
-			<!-- image_name Form Input -->
-			<div class="form-group{{ $errors->has('image_name') ? ' has-error' : '' }}">
-				<label class="control-label">Image Name</label>
-				<input type="text" class="form-control" name="image_name"
-				value="{{ old('image_name') }}">
-				@if ($errors->has('image_name'))
+			<!-- book_name Form Input -->
+			<div class="form-group{{ $errors->has('book_name') ? ' has-error' : '' }}">
+				<label class="control-label">Book Name</label>
+				<input type="text" class="form-control" name="book_name"
+				value="{{ old('book_name') }}">
+				@if ($errors->has('book_name'))
 				<span class="help-block">
-					<strong>{{ $errors->first('image_name') }}</strong>
+					<strong>{{ $errors->first('book_name') }}</strong>
 				</span>
 				@endif
 			</div>

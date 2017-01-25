@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 use App\Traits\ManagesImages;
 use App\Http\Requests\CreateImageRequest;
 use App\MarketingImage;
@@ -50,16 +51,12 @@ class MarketingImageController extends Controller
             'book_name'         =>$request->get('book_name'),
             'slug'                     =>$slug,
             'author'                 =>$request->get('author'),
-            'category'               =>$request->get('category'),
             'book_description'  =>$request->get('book_description'),   
             'book_review'          =>$request->get('book_review'),
             'library_name'         =>$request->get('library_name'),
             'library_address'      =>$request->get('library_address'),
             'library_contact'       =>$request->get('library_contact'),
-            'image_name'        => $request->get('image_name'),
-            'image_extension'   => $request->file('image')->getClientOriginalExtension(),
-            'is_active'         => $request->get('is_active'),
-            'is_featured'       => $request->get('is_featured')
+            'image_extension'   => $request->file('image')->getClientOriginalExtension()
             ]);
 
         // save model
@@ -70,7 +67,7 @@ class MarketingImageController extends Controller
         // pass in the file and the model
         $this->saveImageFiles($file, $marketingImage);
         alert()->success('Congrats!', 'Book Image And Thumbnail Created!');
-        return redirect()->route('marketing-image.show', [$marketingImage]);
+        return redirect()->route('marketing-image.index', [$marketingImage]);
     }
     /**
      * Display the specified resource.
@@ -114,6 +111,15 @@ class MarketingImageController extends Controller
             $this->deleteExistingImages($marketingImage);
             $this->setNewFileExtension($request, $marketingImage);
         }
+        $marketingImage->update([
+            'book_name'         =>$request->input('book_name'),
+            'author'                 =>$request->input('author'),
+            'book_description'  =>$request->input('book_description'),   
+            'book_review'          =>$request->input('book_review'),
+            'library_name'         =>$request->input('library_name'),
+            'library_address'      =>$request->input('library_address'),
+            'library_contact'       =>$request->input('library_contact')
+            ]); 
         
         $marketingImage->save();
         // check for file, if new file, overwrite existing file
@@ -154,7 +160,6 @@ class MarketingImageController extends Controller
      */
     private function setUpdatedModelValues(EditImageRequest $request, $marketingImage)
     {
-        $marketingImage->is_active = $request->get('is_active');
-        $marketingImage->is_featured = $request->get('is_featured');
+
     }
 }

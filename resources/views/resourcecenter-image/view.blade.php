@@ -4,7 +4,7 @@
 <div class="container">
     <div class="col-md-12">
 
-        <h1>{{ $resourcecenterImage->image_name }} Resource Center Image</h1>
+        <h1>{{ $resourcecenterImage->book_name }} Resource Center Image</h1>
 
         <div class="pull-left">
 
@@ -25,7 +25,7 @@
 
                     <tr>
 
-                        <th>Thumbnail</th>
+                        <td>Thumbnail</td>
 
                     </tr>
 
@@ -42,7 +42,7 @@
 
                     <tr>
 
-                        <th>Primary Image</th>
+                        <td>Primary Image</td>
 
                     </tr>
 
@@ -54,7 +54,49 @@
 
                         </td>
                     </tr>
+                    <tr>
 
+                        <td>Book Name</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            {{$resourcecenterImage->book_name}}
+
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>Category Name</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            {{$resourcecenterImage->category_name}}
+
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td>Download</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            {{$resourcecenterImage->download}}
+
+                        </td>
+                    </tr>
                     <tr>
                         <td>
 

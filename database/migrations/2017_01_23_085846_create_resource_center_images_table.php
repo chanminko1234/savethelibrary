@@ -15,7 +15,7 @@ class CreateResourceCenterImagesTable extends Migration
     {
         Schema::create('resource_center_images', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('image_name')->unique();
+            $table->string('book_name')->unique();
             $table->string('slug')->unique();
             $table->string('category_name');
             $table->string('image_extension', 10);
