@@ -5,17 +5,17 @@
 
 <div class="container">
 
- <h2>Update Book</h2>
+   <h2>Update Book</h2>
 
 
- <!-- delete button -->
+   <!-- delete button -->
 
- <div class="form-group pull-right">
-   <form class="form" role="form" method="POST" action="{{ url('backend/marketing-image/'. $marketingImage->id) }}">
-    <input type="hidden" name="_method" value="delete">
-    {{ csrf_field() }}
-    <input class="btn btn-lg btn-danger" Onclick="return ConfirmDelete();" type="submit" value="Delete">
-</form>
+   <div class="form-group pull-right">
+     <form class="form" role="form" method="POST" action="{{ url('backend/marketing-image/'. $marketingImage->id) }}">
+        <input type="hidden" name="_method" value="delete">
+        {{ csrf_field() }}
+        <input class="btn btn-lg btn-danger" Onclick="return ConfirmDelete();" type="submit" value="Delete">
+    </form>
 </div>
 
 <!-- image name no input -->
@@ -50,17 +50,16 @@
     </span>
 
     @endif
-    <br>
     <!-- image file Form Input -->
 
     <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
 
-       <label class="control-label">Book Name</label>
-       <input type="text" class="form-control"
-       name="book_name" value="{{$marketingImage->book_name}}">
+     <label class="control-label">Book Name</label>
+     <input type="text" class="form-control"
+     name="book_name" value="{{$marketingImage->book_name}}">
 
-       @if ($errors->has('book_name'))
-       <span class="help-block">
+     @if ($errors->has('book_name'))
+     <span class="help-block">
         <strong>{{ $errors->first('book_name') }}</strong>
     </span>
     @endif

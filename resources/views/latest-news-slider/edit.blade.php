@@ -57,7 +57,7 @@
     </span>
     @endif
     <label class="control-label">News Description</label>
-    <textarea name="library_description" id="summernote" cols="30" rows="10">{!! $LatestNew->news_description!!}</textarea>
+    <textarea name="news_description" id="summernote" cols="30" rows="10">{!! $LatestNew->news_description!!}</textarea>
 
 
     @if ($errors->has('news_description'))

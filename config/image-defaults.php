@@ -46,4 +46,22 @@ return [
     'thumbHeight'           => 100,
     'thumbWidth'            => 100,
     ],
+    'LatestNewsImage'=>[
+    'destinationFolder'     => '/imgs/LatestNews/',
+    'destinationThumbnail'      => '/imgs/LatestNews/thumbnails/',
+    'thumbPrefix'           => 'thumb-',
+    'imagePath'             => '/imgs/LatestNews/',
+    'thumbnailPath'         => '/imgs/LatestNews/thumbnails/thumb-',
+    'thumbHeight'           => 100,
+    'thumbWidth'            => 100,
+    ],
+    'locationImage'=> [
+    'destinationFolder'     => '/imgs/location/',
+    'destinationThumbnail'      => '/imgs/location/thumbnails/',
+    'thumbPrefix'           => 'thumb-',
+    'imagePath'             => '/imgs/location/',
+    'thumbnailPath'         => '/imgs/location/thumbnails/thumb-',
+    'thumbHeight'           => 100,
+    'thumbWidth'            => 100,
+    ],
     ];

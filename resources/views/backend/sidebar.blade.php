@@ -55,6 +55,19 @@
 
 <li class="treeview">
   <a href="#">
+    <i class="fa fa-book" aria-hidden="true"></i><span>Latest News</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/latest-news') }}"><i class="fa fa-circle-o"></i>Latest News List</a></li>
+    <li><a href="{{ url('backend/latest-news/create') }}"><i class="fa fa-circle-o"></i> Create Latest News</a></li>
+  </ul>
+</li>
+
+<li class="treeview">
+  <a href="#">
    <i class="fa fa-book" aria-hidden="true"></i><span>Library Sliders</span>
    <span class="pull-right-container">
     <i class="fa fa-angle-left pull-right"></i>
@@ -68,14 +81,27 @@
 
 <li class="treeview">
   <a href="#">
+   <i class="fa fa-book" aria-hidden="true"></i><span>Library Location</span>
+   <span class="pull-right-container">
+    <i class="fa fa-angle-left pull-right"></i>
+  </span>
+</a>
+<ul class="treeview-menu">
+  <li><a href="{{ url('backend/location_image') }}"><i class="fa fa-circle-o"></i> Library Location List</a></li>
+  <li><a href="{{ url('backend/location_image/create') }}"><i class="fa fa-circle-o"></i> Create Location</a></li>
+</ul>
+</li>
+
+<li class="treeview">
+  <a href="#">
    <i class="fa fa-book" aria-hidden="true"></i><span>Latest News Sliders</span>
    <span class="pull-right-container">
     <i class="fa fa-angle-left pull-right"></i>
   </span>
 </a>
 <ul class="treeview-menu">
-  <li><a href="{{ url('backend/latest-news-slider') }}"><i class="fa fa-circle-o"></i>Latest News List</a></li>
-  <li><a href="{{ url('backend/latest-news-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest News</a></li>
+  <li><a href="{{ url('backend/latest-news-slider') }}"><i class="fa fa-circle-o"></i>Latest News Slider List</a></li>
+  <li><a href="{{ url('backend/latest-news-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest Slider News</a></li>
 </ul>
 </li>
 

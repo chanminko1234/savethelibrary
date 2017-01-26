@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LatestNewsSliderImageEditRequest extends FormRequest
+class EditLocationImageRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,8 @@ class LatestNewsSliderImageEditRequest extends FormRequest
     public function rules()
     {
         return [
-        'image' => 'mimes:jpeg,jpg,bmp,png|max:1000',
+            //
+        'image' => 'mimes:jpeg,jpg,bmp,png|max:1000'
         ];
     }
 }

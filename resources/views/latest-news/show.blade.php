@@ -7,7 +7,7 @@
         <div class="pull-left col-md-2">
 
 
-            <a href="{{url('backend/latest-news-slider/'.$LatestNew->id.'/edit')}}">
+            <a href="{{url('backend/latest-news/'.$LatestNew->id.'/edit')}}">
 
                 <button type="button" class="btn btn-primary btn-lg">Edit News</button></a>
 
@@ -16,7 +16,7 @@
 
             <div class="form-group col-md-2">
 
-                <form class="form" role="form" method="POST" action="{{ url('backend/latest-news-slider/'. $LatestNew->id) }}">
+                <form class="form" role="form" method="POST" action="{{ url('backend/latest-news/'. $LatestNew->id) }}">
                     <input type="hidden" name="_method" value="delete">
                     {{ csrf_field() }}
 
@@ -27,7 +27,7 @@
         </div>
 
         <hr/>
-        
+
         <div class="panel panel-default">
 
             <!-- Table -->

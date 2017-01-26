@@ -113,6 +113,14 @@ class LatestNewsSliderController extends Controller
             $this->deleteExistingImages($LatestNew);
             $this->setNewFileExtension($request,$LatestNew);
         }
+        $LatestNew->update([
+           'news_title'      =>$request->input('news_title'),
+           'news_description'  =>$request->input('news_description'),
+           'date'   =>$request->input('date'),
+           'time'   =>$request->input('time'),
+           'location' =>$request->input('location'),
+           'contact'  =>$request->input('contact')
+           ]); 
         $LatestNew->update($request->all());
         // check for file, if new file, overwrite existing file
         if ($this->newFileIsUploaded()){
