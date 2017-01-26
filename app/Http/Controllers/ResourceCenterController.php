@@ -54,6 +54,7 @@ class ResourceCenterController extends Controller
             'book_name'=> $request->get('book_name'),
             'slug'                     =>$slug,
             'category_name'=>$request->get('category_name'),
+            'image_name'=> $request->get('image_name'),
             'image_extension'=> $request->file('image')
             ->getClientOriginalExtension(),
             'download'=>$request->get('download')

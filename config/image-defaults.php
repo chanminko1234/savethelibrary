@@ -37,4 +37,13 @@ return [
     'thumbHeight'           => 100,
     'thumbWidth'            => 100,
     ],
+    'LatestNewsSliderImage'=>[
+    'destinationFolder'     => '/imgs/LatestNewsSlider/',
+    'destinationThumbnail'      => '/imgs/LatestNewsSlider/thumbnails/',
+    'thumbPrefix'           => 'thumb-',
+    'imagePath'             => '/imgs/LatestNewsSlider/',
+    'thumbnailPath'         => '/imgs/LatestNewsSlider/thumbnails/thumb-',
+    'thumbHeight'           => 100,
+    'thumbWidth'            => 100,
+    ],
     ];

@@ -18,6 +18,7 @@
    <thead>
      <td>Id</td>
      <td>Thumbnail</td>
+     <td>Image Name</td>
      <td>Book Name</td>
      <td>Author</td>
      <td>Date Created</td>
@@ -30,31 +31,39 @@
 
     <tr>
       <td><a href="{{url('backend/marketing-image/'. $marketingImage->id.'/edit')}}">{{ $marketingImage->id }}</a></td>
+
       <td><a href="{{url('backend/marketing-image/'.$marketingImage->id.'-'.$marketingImage->slug)}}"><img src="{{ $marketingImage->showImage($marketingImage, $thumbnailPath) }}"></a></td>
-      <td><a href="{{url('backend/marketing-image/'.$marketingImage->id.'-'.$marketingImage->slug)}}">{{$marketingImage->book_name}}</a></td>
-      <td>{{$marketingImage->author}}</td>
-      <td>{{ $marketingImage->created_at }}</td>
-      <td class="edit_btn"><a href="{{url('backend/marketing-image/'.$marketingImage->id.'/edit')}}"><button type="button" class="btn btn-lg btn-primary">Edit</button></a></td>
-    </tr>
 
-    @endforeach
+      <td><a href="{{url('backend/marketing-image/'.$marketingImage->id)}}">
+        {{ $marketingImage->image_name }}</a></td>
 
-  </tbody>
+        <td><a href="{{url('backend/marketing-image/'.$marketingImage->id.'-'.$marketingImage->slug)}}">{{$marketingImage->book_name}}</a></td>
 
-</table>
+        <td>{{$marketingImage->author}}</td>
 
-@else
+        <td>{{ $marketingImage->created_at }}</td>
 
-Sorry, no Marketing Images
+        <td class="edit_btn"><a href="{{url('backend/marketing-image/'.$marketingImage->id.'/edit')}}"><button type="button" class="btn btn-lg btn-primary">Edit</button></a></td>
+      </tr>
 
-@endif
+      @endforeach
 
-{{ $marketingImages->links() }}
-<div> <a href="{{url('backend/marketing-image/create')}}">
-  <button type="button" class="btn btn-lg btn-primary">
-    Create New
-  </button></a>
-</div>
+    </tbody>
+
+  </table>
+
+  @else
+
+  Sorry, no Marketing Images
+
+  @endif
+
+  {{ $marketingImages->links() }}
+  <div> <a href="{{url('backend/marketing-image/create')}}">
+    <button type="button" class="btn btn-lg btn-primary">
+      Create New
+    </button></a>
+  </div>
 
 </div>
 

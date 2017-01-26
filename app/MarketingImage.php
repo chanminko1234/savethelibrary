@@ -17,6 +17,7 @@ class MarketingImage extends Model
 	'library_name',
 	'library_address',
 	'library_contact',
+	'image_name',
 	'image_extension'];
 	
 }

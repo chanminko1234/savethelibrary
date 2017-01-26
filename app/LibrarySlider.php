@@ -14,6 +14,7 @@ class LibrarySlider extends Model
 	'library_description',
 	'library_address',
 	'library_contact',
+	'image_name',
 	'image_extension'
 	];
 }

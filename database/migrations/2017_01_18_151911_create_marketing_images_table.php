@@ -24,6 +24,7 @@ class CreateMarketingImagesTable extends Migration
             $table->string('library_name');
             $table->string('library_address');
             $table->string('library_contact');
+            $table->string('image_name')->unique();
             $table->string('image_extension', 10);
             $table->timestamps();
         });

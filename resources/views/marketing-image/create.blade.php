@@ -14,6 +14,18 @@
             <form class="form" role="form" method="POST" action="{{ url('backend/marketing-image/') }}" enctype="multipart/form-data">
 
                 {{ csrf_field() }}
+                <!-- image_name Form Input -->
+                <div class="form-group{{ $errors->has('image_name') ?
+                    ' has-error' : '' }}">
+                    <label class="control-label">Image Name</label>
+                    <input type="text" class="form-control" name="image_name"
+                    value="{{ old('image_name') }}">
+                    @if ($errors->has('image_name'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('image_name') }}</strong>
+                    </span>
+                    @endif
+                </div>
                 <!-- name Form Input -->
                 <div class="form-group{{ $errors->has('book_name') ? ' has-error' : '' }}">
                     <label class="control-label">Book Name</label>

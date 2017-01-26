@@ -20,6 +20,7 @@ class CreateLibraryImageRequest extends FormRequest
     public function rules()
     {
         return [
+        'image_name' => 'alpha_num|required|unique:marketing_images',
         'library_name'      =>'required',
         'library_address'   =>'required',
         'library_contact'   =>'required',

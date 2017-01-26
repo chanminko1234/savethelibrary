@@ -57,31 +57,32 @@
             <strong>{{ $errors->first('library_name') }}</strong>
         </span>
         @endif
+
         <label class="control-label">Library Description</label>
         <textarea name="library_description" id="summernote" cols="30" rows="10">{!! $LibrySliderImage->library_description !!}</textarea>
-
-
         @if ($errors->has('library_description'))
         <span class="help-block">
             <strong>{{ $errors->first('library_description') }}</strong>
         </span>
         @endif
+
         <label class="control-label">Library Address</label>
         <textarea name="library_address" id="summernote2" cols="30" rows="10">{!! $LibrySliderImage->library_address !!}</textarea>
-
         @if ($errors->has('library_address'))
         <span class="help-block">
             <strong>{{ $errors->first('library_address') }}</strong>
         </span>
         @endif
+
         <label class="control-label">Library Contact</label>
-        <textarea class="form-control" rows="5" name="library_contact">{!! $LibrySliderImage->library_contact !!}</textarea> 
+        <textarea name="library_contact" id="summernote3" cols="30" rows="10">{!! $LibrySliderImage->library_contact !!}</textarea>
         @if ($errors->has('library_contact'))
         <span class="help-block">
             <strong>{{ $errors->first('library_contact') }}</strong>
         </span>
         @endif
-        <!-- Submit Button -->
+
+        
         <br>
         <div class="form-group">
 

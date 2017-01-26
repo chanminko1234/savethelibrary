@@ -18,6 +18,7 @@ class CreateResourceCenterImagesTable extends Migration
             $table->string('book_name')->unique();
             $table->string('slug')->unique();
             $table->string('category_name');
+            $table->string('image_name')->unique();
             $table->string('image_extension', 10);
             $table->text('download');
             $table->timestamps();

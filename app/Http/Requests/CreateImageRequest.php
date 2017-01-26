@@ -20,6 +20,7 @@ class CreateImageRequest extends FormRequest
     public function rules()
     {
         return [
+        'image_name' => 'alpha_num|required|unique:marketing_images',
         'book_name' =>'required|unique:marketing_images|string|max:50',
         'author'    =>'required|string|max:30',
         'book_description'  =>'required',

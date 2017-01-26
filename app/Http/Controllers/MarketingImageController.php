@@ -56,6 +56,7 @@ class MarketingImageController extends Controller
             'library_name'         =>$request->get('library_name'),
             'library_address'      =>$request->get('library_address'),
             'library_contact'       =>$request->get('library_contact'),
+            'image_name'=> $request->get('image_name'),
             'image_extension'   => $request->file('image')->getClientOriginalExtension()
             ]);
 

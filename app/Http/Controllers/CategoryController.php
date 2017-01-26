@@ -38,8 +38,6 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
-
-
         $this->validate($request, [
             'category_name' => 'required|min:4'
             ]);
@@ -72,7 +70,7 @@ class CategoryController extends Controller
     {
         //
      $category = Category::findOrFail($id);
-     return view('category.edit', compact('category'));;
+     return view('category.edit', compact('category'));
  }
 
     /**

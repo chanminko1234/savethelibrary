@@ -74,8 +74,8 @@
   </span>
 </a>
 <ul class="treeview-menu">
-  <li><a href="{{ url('backend/library-slider') }}"><i class="fa fa-circle-o"></i>Latest News List</a></li>
-  <li><a href="{{ url('backend/library-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest News</a></li>
+  <li><a href="{{ url('backend/latest-news-slider') }}"><i class="fa fa-circle-o"></i>Latest News List</a></li>
+  <li><a href="{{ url('backend/latest-news-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest News</a></li>
 </ul>
 </li>
 
@@ -91,6 +91,7 @@
     <li><a href="{{ url('backend/user/create') }}"><i class="fa fa-circle-o"></i> Create User</a></li>
   </ul>
 </li>
+
 <li class="treeview">
   <a href="#">
     <i class="fa fa-dashboard"></i> <span>Category</span>
@@ -100,9 +101,36 @@
   </a>
   <ul class="treeview-menu">
     <li><a href="{{ url('backend/category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
-    <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category User</a></li>
+    <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category Create</a></li>
   </ul>
 </li>
+
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-dashboard"></i> <span>Resource Category</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/resourcecategory') }}"><i class="fa fa-circle-o"></i> Resource Category List</a></li>
+    <li><a href="{{ url('backend/resourcecategory/create') }}"><i class="fa fa-circle-o"></i> Resource Category Create</a></li>
+  </ul>
+</li>
+
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-dashboard"></i> <span>Author</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/author') }}"><i class="fa fa-circle-o"></i> Author List</a></li>
+    <li><a href="{{ url('backend/author/create') }}"><i class="fa fa-circle-o"></i> Author Create</a></li>
+  </ul>
+</li>
+
 <li class="treeview">
   <a href="#">
     <i class="fa fa-dashboard"></i> <span>Access Management</span>

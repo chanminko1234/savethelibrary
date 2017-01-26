@@ -15,6 +15,7 @@
 			<thead>
 				<td>Id</td>
 				<td>Thumbnail</td>
+				<td>Image Name</td>
 				<td>Book Name</td>
 				<td>Category Name</td>
 				<td>Download</td>
@@ -28,38 +29,41 @@
 				<tr>
 					<td><a href="{{url('backend/resourcecenter-image/'. $resourcecenterImage->id.'/edit')}}">{{ $resourcecenterImage->id }}</a></td>
 					<td><a href="{{ url('backend/resourcecenter-image/'. $resourcecenterImage->id) }}"><img src="{{ $resourcecenterImage->showImage($resourcecenterImage, $thumbnailPath) }}"></a></td>
-					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->book_name }}</a></td>
-					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->category_name }}</a></td>
-					<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->download }}</a></td>
-					<td>{{ $resourcecenterImage->created_at }}</td>
-					<td class="edit_btn"><a href="{{url('backend/resourcecenter-image/'.$resourcecenterImage->id.'/edit')}}"><button type="button" class="btn btn-lg btn-primary">Edit</button></a></td>
-				</tr>
+					<td><a href="{{url('backend/resourcecenter-image/'.$resourcecenterImage->id)}}">
+						{{ $resourcecenterImage->image_name }}</a></td>
+						
+						<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->book_name }}</a></td>
+						<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->category_name }}</a></td>
+						<td><a href="{{ url('backend/resourcecenter-image/. $resourcecenterImage->id') }}">{{ $resourcecenterImage->download }}</a></td>
+						<td>{{ $resourcecenterImage->created_at }}</td>
+						<td class="edit_btn"><a href="{{url('backend/resourcecenter-image/'.$resourcecenterImage->id.'/edit')}}"><button type="button" class="btn btn-lg btn-primary">Edit</button></a></td>
+					</tr>
 
-				@endforeach
+					@endforeach
 
-			</tbody>
+				</tbody>
 
-		</table>
+			</table>
 
-		@else
+			@else
 
-		Sorry, no Resource Center Images
+			Sorry, no Resource Center Images
 
-		@endif
+			@endif
 
-		{{ $resourcecenterImages->links() }}
+			{{ $resourcecenterImages->links() }}
 
-		<div> <a href="{{ url('backend/resourcecenter-image/create')}}">
-			<button type="button" class="btn btn-lg btn-primary">
-				Create New
-			</button></a>
+			<div> <a href="{{ url('backend/resourcecenter-image/create')}}">
+				<button type="button" class="btn btn-lg btn-primary">
+					Create New
+				</button></a>
+			</div>
+
 		</div>
-
 	</div>
-</div>
 
 
 
 
 
-@endsection
+	@endsection

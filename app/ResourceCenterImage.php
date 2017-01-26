@@ -11,6 +11,7 @@ class ResourceCenterImage extends Model
 	protected $fillable = ['book_name',
 	'slug',
 	'category_name',
+	'image_name',
 	'image_extension',
 	'download'
 	];

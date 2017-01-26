@@ -55,12 +55,9 @@ class LibrarySliderController extends Controller
             'library_address'   =>$request->get('library_address'),
             'library_contact'   =>$request->get('library_contact'),
             'library_description' =>$request->get('library_description'),
+            'image_name'=> $request->get('image_name'),
             'image_extension'   => $request->file('image')->getClientOriginalExtension()
             ]);
-
-
-
-
         // save model
         $LibrySliderImage->save();
         // get instance of file

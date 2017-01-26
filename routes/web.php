@@ -19,7 +19,6 @@ Route::get('/latest', 'LatestController@index');
 Route::get('/latestreview', 'LatestReviewController@index');
 Route::get('/resourcecenter', 'LatestViewController@index');
 Route::get('/aboutus','AboutUsController@index');
-
 Route::get('/bookdetail', 'BookDetailController@index');
 
 
@@ -39,6 +38,9 @@ Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], fu
 	Route::resource('library-slider','LibrarySliderController');
 	Route::resource('marketing-image', 'MarketingImageController');
 	Route::resource('resourcecenter-image', 'ResourceCenterController');
+	Route::resource('latest-news-slider','LatestNewsSliderController');
+	Route::resource('author', 'AuthorController');
+	Route::resource('resourcecategory', 'ResourceCategoryController');
 	Route::resource('latest-news-slider','LatestNewsSliderController');
 });
 

@@ -20,6 +20,7 @@ class CreateLibrarySlidersTable extends Migration
             $table->string('library_address');
             $table->string('library_contact');
             $table->text('library_description');
+            $table->string('image_name')->unique();
             $table->string('image_extension', 10);
             $table->timestamps();
         });
