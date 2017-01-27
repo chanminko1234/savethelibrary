@@ -22,7 +22,29 @@
 <!-- Main Styles CSS -->
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
-<style>
+<style type="text/css">
+	.flex-caption {
+		width: 263px;
+		padding: 2%;
+		left: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.flex-cap {
+		width: 200px;
+		padding: 2%;
+		left: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		font-size: 14px;
+		line-height: 18px;
+	}
 	@import "font-awesome";
 	
 	
@@ -50,8 +72,8 @@
 
 
 	}
-	p:hover{
-		color: gray;
+	div a p:hover{
+		color: yellow;
 	}
 	.booktext{
 		padding-left: 30px;
@@ -83,15 +105,13 @@
 		margin-left: 210px;
 	}
 	.photo{
-		height: 200px;
-		width: 300px;
-		border-radius: 10px;
+		height: 180px;
+		width: 263px;
 		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
 	.review{
 		height: 300px;
 		width: 200px;
-		border-radius: 5px;
 		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
 	.logoimg{
@@ -190,7 +210,6 @@
 	}
 	.specials-grids {
 		padding: 2% 0;
-		text-align: center;
 		margin-left: 70px;
 	}
 	button[type=download]{
@@ -265,6 +284,7 @@
 		text-overflow: ellipsis; 
 	}
 	/* Right-aligned sidebar */
+
 	.nav-sidebar.pull-right { 
 		border-right: 0; 
 		border-left: 1px solid #ddd; 
@@ -384,19 +404,9 @@
 			height: 250px;
 
 		}
-		#slideshow {
-			margin: 80px auto;
-			position: relative;
-			margin-bottom:  280px;
-			box-shadow: 10px solid black;
+		
+		.map{
+			width: 1050px;
+			height: 400px;
 		}
-
-		#slideshow > div {
-			position: absolute;
-			top: 5px;
-			left: 10px;
-			right: 10px;
-			bottom: 10px;
-		}
-
 	</style>

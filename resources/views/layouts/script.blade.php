@@ -6,13 +6,10 @@
   <script src="{{ asset('js/custom.js') }}"></script>
   <script src="{{ asset('js/jquery.simpleQuote.js')}} "></script>
 
-{{--   <script src="{{asset('js/jquery.jcarousel.min.js')}}"></script>
-<script src="{{asset('js/functions.js')}}"></script> --}}
+  <!-- Call functions on document ready -->
 
-<!-- Call functions on document ready -->
-
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
   	// Can also be used with $(document).ready()
   	$(window).load(function() {
   		$('.flexslider').flexslider({
@@ -47,14 +44,11 @@
       includeAuthor : true 
     });
 
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-      $('#slideshow > div:first')
-      .fadeOut(500)
-      .next()
-      .fadeIn(500)
-      .end()
-      .appendTo('#slideshow');
-    }, 4000);
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/my_MM/sdk.js#xfbml=1&version=v2.8&appId=1766729493579168";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>

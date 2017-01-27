@@ -149,14 +149,14 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: -25px;
+  left: -10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 30px;
+  right: -19px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
