@@ -17,4 +17,8 @@ class LibrarySlider extends Model
 	'image_name',
 	'image_extension'
 	];
+	public function user()
+	{
+		return $this->belongsTo('App\User');  
+	}
 }

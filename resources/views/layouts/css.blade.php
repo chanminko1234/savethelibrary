@@ -24,7 +24,7 @@
 
 <style type="text/css">
 	.flex-caption {
-		width: 263px;
+		width: 283px;
 		padding: 2%;
 		left: 0;
 		bottom: 0;
@@ -106,7 +106,7 @@
 	}
 	.photo{
 		height: 180px;
-		width: 263px;
+		width: 283px;
 		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	}
 	.review{
@@ -406,7 +406,8 @@
 		}
 		
 		.map{
-			width: 1050px;
+			width: 882px;
 			height: 400px;
+			margin-left: -38px;
 		}
 	</style>
