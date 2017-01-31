@@ -50,11 +50,11 @@ class LatestNewsController extends Controller
     public function store(CreateLatestNewsImageRequest $request)
     {
         //
-       $slug = str_slug($request->get('news_title'), "-");
+     $slug = str_slug($request->get('news_title'), "-");
 
 
 
-       $LatestNew = new LatestNews([
+     $LatestNew = new LatestNews([
         'news_title'      =>$request->get('news_title'),
         'slug'           => $slug,
         'news_description'  =>$request->get('news_description'),
@@ -66,14 +66,14 @@ class LatestNewsController extends Controller
         'image_extension'   => $request->file('image')->getClientOriginalExtension(),
         ]);
         // save model
-       $LatestNew->save();
+     $LatestNew->save();
         // get instance of file
-       $file = $this->getUploadedFile();
+     $file = $this->getUploadedFile();
         // pass in the file and the model
-       $this->saveImageFiles($file, $LatestNew);
-       alert()->success('Congrats!', 'Latest News Created!');
-       return redirect()->route('latest-news.index', [$LatestNew]);
-   }
+     $this->saveImageFiles($file, $LatestNew);
+     alert()->success('Congrats!', 'Latest News Created!');
+     return redirect()->route('latest-news.index', [$LatestNew]);
+ }
 
     /**
      * Display the specified resource.
@@ -114,21 +114,21 @@ class LatestNewsController extends Controller
     public function update($id, LatestNewsImageEditRequest $request)
     {
         //
-     $LatestNew = LatestNews::findOrFail($id);
-     $this->setUpdatedModelValues($request, $LatestNew);
+       $LatestNew = LatestNews::findOrFail($id);
+       $this->setUpdatedModelValues($request, $LatestNew);
         // if file, we have additional requirements before saving
-     if ($this->newFileIsUploaded()) {
+       if ($this->newFileIsUploaded()) {
         $this->deleteExistingImages($LatestNew);
         $this->setNewFileExtension($request,$LatestNew);
     }
     $LatestNew->update([
-       'news_title'      =>$request->input('news_title'),
-       'news_description'  =>$request->input('news_description'),
-       'date'   =>$request->input('date'),
-       'time'   =>$request->input('time'),
-       'location' =>$request->input('location'),
-       'contact'  =>$request->input('contact')
-       ]); 
+     'news_title'      =>$request->input('news_title'),
+     'news_description'  =>$request->input('news_description'),
+     'date'   =>$request->input('date'),
+     'time'   =>$request->input('time'),
+     'location' =>$request->input('location'),
+     'contact'  =>$request->input('contact')
+     ]); 
     $LatestNew->update($request->all());
         // check for file, if new file, overwrite existing file
     if ($this->newFileIsUploaded()){
@@ -150,12 +150,12 @@ class LatestNewsController extends Controller
     public function destroy($id)
     {
         //
-       $LatestNew = LatestNews::findOrFail($id);
-       $this->deleteExistingImages($LatestNew);
-       LatestNews::destroy($id);
-       alert()->error('Notice', 'image deleted!');
-       return redirect()->route('latest-news.index');
-   }
+     $LatestNew = LatestNews::findOrFail($id);
+     $this->deleteExistingImages($LatestNew);
+     LatestNews::destroy($id);
+     alert()->error('Notice', 'image deleted!');
+     return redirect()->route('latest-news.index');
+ }
    /**
      * @param EditImageRequest $request
      * @param $LatestNew

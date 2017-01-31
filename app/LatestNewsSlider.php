@@ -19,4 +19,8 @@ class LatestNewsSlider extends Model
 	'location',
 	'image_extension',
 	'image_name'];
+	public function user()
+	{
+		return $this->belongsTo('App\User');  
+	}
 }

@@ -22,7 +22,7 @@ class LibrarySliderController extends Controller
     public function index()
     {     
         $thumbnailPath = $this->thumbnailPath;
-        $LibrySliderImages = LibrarySlider::paginate(5);
+        $LibrySliderImages = LibrarySlider::paginate(10);
         return view('library-slider.index', compact('LibrySliderImages', 'thumbnailPath'));
     }
     /**

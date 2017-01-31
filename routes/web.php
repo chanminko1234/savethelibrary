@@ -44,6 +44,7 @@ Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], fu
 	Route::resource('latest-news-slider','LatestNewsSliderController');
 	Route::resource('latest-news','LatestNewsController');
 	Route::resource('location_image','LocationImageController');
+	Route::resource('latest-review-slider','LatestReviewSliderController');
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){

@@ -2,10 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Traits\ManagesImages;
+use App\Http\Requests\CreateLibraryImageRequest;
+use App\Http\Requests\CreateLatestNewsSliderImageRequest;
+use App\Http\Requests\CreateLatestReviewSliderImageRequest;
+use App\LatestReviewSlider;
+use App\LibrarySlider;
+use App\LatestNewsSlider;
 
 class LibraryController extends Controller
 {
+   use ManagesImages;
+
+
     /**
      * Display a listing of the resource.
      *
@@ -13,8 +22,12 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        //
-        return view ('library.index');
+        $thumbnailPath = $this->thumbnailPath;
+        $LibrySliderImages = LibrarySlider::latest()->paginate(9);
+        $LatestNews = LatestNewsSlider::latest()->paginate(9);
+        $LatestReviews = LatestReviewSlider::latest()->paginate(12);
+        return view('library.index', compact('LibrySliderImages', 'LatestNews', 'LatestReviews', 'thumbnailPath'));
+
     }
 
     /**

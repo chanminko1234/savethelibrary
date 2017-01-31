@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	@include('layouts.logo')
+	{{-- 	@include('layouts.logo') --}}
 	<div class="row">
 		
 		<div class="col-md-12">

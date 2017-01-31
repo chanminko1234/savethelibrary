@@ -29,4 +29,8 @@ class User extends Authenticatable
     public function libraryslider(){
         return $this->hasMany('App\LibrarySlider');
     }
+    public function latestnewsslider(){
+        return $this->hasMany('App\LatestNewsSlider');
+    }
+
 }
