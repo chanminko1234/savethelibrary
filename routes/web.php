@@ -19,8 +19,10 @@ Route::get('/latest', 'LatestController@index');
 Route::get('/latestreview', 'LatestReviewController@index');
 Route::get('/resourcecenter', 'LatestViewController@index');
 Route::get('/aboutus','AboutUsController@index');
-Route::get('/bookdetail', 'BookDetailController@index');
 
+Route::get('/bookdetail', 'BookDetailController@index');
+Route::get('/library_detail', 'LibraryDetailController@index');
+Route::resource('/new_detail','NewDetailController');
 
 Route::get('backend/login', "AccessController@getLogin");
 Route::get("backend/logout", "AccessController@logout");

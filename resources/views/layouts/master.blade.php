@@ -12,12 +12,13 @@
 
 </head>
 <body>
+	@include('layouts.nav')
 
 	{{-- 	@include('layouts.logo') --}}
-	<div class="row">
+	<div class="row seperate-nav-body" id="content-container">
 		
 		<div class="col-md-12">
-			@include('layouts.nav')
+			
 			<a href="#" class="scrollup">Scroll</a>
 			@yield('content')
 		</div>

@@ -1,7 +1,8 @@
 @extends('layouts.master')
 @section('content')
+
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-12 space">
 		<div class="col-md-9">
 			@foreach($locationImages as $locationImage)
 			<div class="special-grid col-md-3">

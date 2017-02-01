@@ -3,7 +3,7 @@
 
 @include('latestview.sidebar')
 <div class="products">
-	<div class="col-md-9">
+	<div class="col-md-9 space">
 		<h3>Featured Products</h3>
 		<section>
 			

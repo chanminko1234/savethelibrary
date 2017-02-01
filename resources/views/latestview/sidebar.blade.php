@@ -2,7 +2,7 @@
 <!-- Sidebar -->
 <div class="container">
 
-	<div class="col-md-3">
+	<div class="col-md-3 space">
 		<div id="sidebar">
 			<ul class="categories">
 				<li>

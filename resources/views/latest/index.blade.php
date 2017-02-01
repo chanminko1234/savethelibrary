@@ -2,13 +2,12 @@
 @section('content')
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-12 space">
 		<div class="col-md-9">
 			@foreach($LatestNews as $LatestNew)
 			<div class="special-grid col-md-3">
 				<img src="{{ $LatestNew->showImage($LatestNew, $thumbnailPath) }}" title="image-name">
-				<a href="#">Latest Plans</a>
-				<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
+				<a href="{{url('/new_detail')}}">{{$LatestNew->news_title}}</a>
 			</div>
 			@endforeach
 		</div>

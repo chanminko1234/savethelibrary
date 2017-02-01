@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Sidebar -->
-<div class="col-md-3">
+<div class="col-md-3 space">
 	<div id="sidebar">
 		<ul class="categories">
 			<li>
@@ -26,7 +26,7 @@
 </div>
 <!-- End Sidebar -->
 <!-- Products -->
-<div class="col-md-9 col-sm-9 col-xs-9 col-lg-9">
+<div class="col-md-9 col-sm-9 col-xs-9 col-lg-9 space">
 	<div class="row">
 		@foreach($resourcecenterImages as $resourcecenterImage)
 		<div class="col-sm-6 col-md-6 col-lg-6">

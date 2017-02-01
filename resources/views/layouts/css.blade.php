@@ -1,23 +1,21 @@
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Bootstrap -->
 <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 
 
 <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
-<link href="{{asset('css/snackbar.min.css')}}" rel="stylesheet">
 
 <!-- Bootstrap Material Design -->
 <link href="{{ asset('css/bootstrap-material-design.css') }}" rel="stylesheet">
-<link href="{{ asset('css/ripples.min.css') }}" rel="stylesheet">
-
-<!-- font Awesome CSS -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
 
-
-<!-- Main Styles CSS -->
 <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+<script src="{{ asset('plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+<!-- font Awesome CSS -->
 
 <style type="text/css">
 	.flex-caption {
@@ -46,8 +44,11 @@
 	
 	
 	.navbar{
-		font-family: Lato;
+		font-family: 'Montserrat', sans-serif;
 		margin-right: -20px;
+	}
+	.nav>li>a, .navbar-form>.form-group>.form-control{
+		font-weight: bold !important;
 	}
 	h1
 	h2
@@ -55,10 +56,10 @@
 	h4
 	h5
 	h6{
-		font-family: Montserrat;
+		font-family: 'Montserrat', sans-serif;
 	}
 	div p span{
-		font-family: Padauk;
+		font-family: 'Padauk', sans-serif;
 		font-size: medium;
 		text-decoration: none;
 
@@ -118,11 +119,11 @@
 		margin-bottom: 10px;
 	}
 	.footerimg{
-		width:155px;
-		height:112px;
+		width:96px;
+		height:96px;
 		/*margin-left: 200px;*/
-		margin-top: 58px;
-		margin-bottom: 10px;
+		margin-top: -10px;
+
 	}
 	.logotext{
 		/*margin-left: 200px;*/

@@ -1,5 +1,4 @@
-
-<div class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="200">
+<div class="navbar nav-booster navbar-fixed-top navbar-default " data-spy="affix" data-offset-top="200">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -7,6 +6,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="#" hidden>
+        <img src="{{ asset('images/navbar_brand.png') }}" class="d-inline-block align-top z-depth-0">
+      </a>
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
@@ -23,7 +25,7 @@
 
       <form class="navbar-form navbar-right">
         <div class="form-group">
-          <input type="text" class="form-control col-md-8" placeholder="Search">
+          <input type="text" class="form-control ripple-effect col-sm-8" placeholder="Search">
         </div>
       </form>
     </div>
