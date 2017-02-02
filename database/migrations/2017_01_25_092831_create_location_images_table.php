@@ -16,6 +16,7 @@ class CreateLocationImagesTable extends Migration
         Schema::create('location_images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('location_name')->unique();
+            $table->string('location_slug');
             $table->string('location_desc');
             $table->string('location_address');
             $table->string('location_content');

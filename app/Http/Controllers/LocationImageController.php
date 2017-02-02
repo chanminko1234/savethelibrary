@@ -51,8 +51,11 @@ class LocationImageController extends Controller
     {
         //dd($request->file('image')->getClientOriginalExtension());
           //
+
+        $slug = str_slug($request->get('location_name'), "-");
         $locationImage = new LocationImage([ 
             'location_name' => $request->get('location_name'),
+            'location_slug'      =>$slug,
             'location_desc' => $request->get('location_desc'),
             'location_address' => $request->get('location_address') ,
             'location_content'=> $request->get('location_content') ,

@@ -21,7 +21,7 @@ Route::get('/resourcecenter', 'LatestViewController@index');
 Route::get('/aboutus','AboutUsController@index');
 
 Route::get('/bookdetail', 'BookDetailController@index');
-Route::get('/library_detail', 'LibraryDetailController@index');
+Route::resource('/library_detail', 'LibraryDetailController');
 Route::resource('/new_detail','NewDetailController');
 
 Route::get('backend/login', "AccessController@getLogin");
@@ -47,6 +47,12 @@ Route::group(['prefix' =>  'backend', 'middleware'=>['sentinel', 'isAdmin']], fu
 	Route::resource('latest-news','LatestNewsController');
 	Route::resource('location_image','LocationImageController');
 	Route::resource('latest-review-slider','LatestReviewSliderController');
+	Route::get('library-category',['uses'=>'LibraryCategoryController@manageCategory']);
+	Route::post('add-category',['as'=>'add.category','uses'=>'LibraryCategoryController@addCategory']);
+	Route::get('library-category/edit/{id}','LibraryCategoryController@edit');
+
+	Route::delete('library-category/delete/{id}','LibraryCategoryController@destroy');
+	Route::resource('update-category/{id}','LibraryCategoryController@update');
 });
 
 Route::get("activate/{id}/{activate_code}", function($id, $activate_code){

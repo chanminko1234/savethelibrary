@@ -1,37 +1,36 @@
 @extends('layouts.master')
 @section('content')
 <div class="specials-grids">
-	<h3 class="pull-left category-caption">Libraries</h3>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="col-md-9">
-				<img src="{{asset('images/feature_image (2).jpg')}}" title="image-name" class="image11"> <br />
-				<a href="/library_detail">Latest Plans</a>
-				<p>Lorem ipsum dolor sit amet consectetur adiing elit.</p>
-				<span class="pull-left"><i class="fa fa-home fa-2x"></i>စမ်းခေျာင်း</span>
-				<span class="read-article pull-right">ရန်ကုန်</span>
-
-				<hr>
-				<a href="tel:959445828497"><i class="fa fa-phone fa-2x" hidden="true"></i></a>
-
-				<a href="mailto:someone@gmail.com"> <i class="fa fa-envelope fa-2x" hidden="true"></i></a>
-
-				<a href="https://www.facebook.com/profile.php?id=100009110034207"><i class="fa fa-facebook fa-2x"></i></a>
-				<br />
-				<br />
+			<div class="col-md-7">
+				<div class="row text-center">
+					<img src="{{ $locationImage->showImage($locationImage, $thumbnailPath) }}" title="image-name" class="image11 img-responsive">
+					<a href="/library_detail">{{$locationImage->location_name }}</a>
+				</div>
+				<div class="row">
+					<span class="pull-left"><i class="fa fa-home fa-2x"></i>{!! $locationImage->location_address!!}</span>
+					<span class="read-article pull-right">ရန်ကုန်</span>
+				</div>
+				<div class="row">
+					<a href="{!! $locationImage->location_content !!}" style="padding:10px;"><i class="fa fa-phone fa-2x" hidden="true"></i></a>
+					
+					<a href="mailto:someone@gmail.com"  style="padding:10px;"> <i class="fa fa-envelope fa-2x" hidden="true"></i></a>
+					
+					<a href="https://www.facebook.com/profile.php?id=100009110034207"  style="padding:10px;"><i class="fa fa-facebook fa-2x"></i></a>
+				</div>
 				<div class="content">
-					<h6>Library Name: </h6>
-					<h6>Library Address: </h6>
-					<h6>Contact Person Name:</h6>
-					<h6>Contact Person Ph No:</h6>
-					<h6>Contact Person Email:</h6>
-					<br /> 
+					<h6>Library Name: {{$locationImage->location_name }}</h6><br>
+					<h6>Library Address: {!! $locationImage->location_address!!}</h6><br>
+					<h6>Contact Person Name:</h6><br>
+					<h6>Contact Person Ph No: {!! $locationImage->location_content !!}</h6><br>
+					<h6>Contact Person Email:</h6><br>
+					<br />
 					@include('library_detail.map')
 				</div>
-
-
 			</div>
-			<div class="col-md-3">
+
+			<div class="col-md-3 pull-right">
 				<div class="right-sidebar">
 					<h2>Category</h2>
 					<div class="panel-group" id="accordion"><!--category-productsr-->
@@ -698,9 +697,12 @@
 									</div><!--/category-products-->
 									<div class="clearfix"></div>
 								</div>
-
 							</div>
-
-							
 						</div>{{-- </div> --}}
-						@endsection
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@endsection

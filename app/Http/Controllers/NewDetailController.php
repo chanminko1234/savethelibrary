@@ -26,8 +26,8 @@ class NewDetailController extends Controller
         //
         $thumbnailPath = $this->thumbnailPath;
         $LatestNews = LatestNews::latest()->paginate(10);
-        return view('new_detail.index', compact('LatestNews', 'thumbnailPath'));
-    }
+            return view('new_detail.index', compact('LatestNews', 'thumbnailPath'));
+        }
 
     /**
      * Show the form for creating a new resource.
@@ -59,7 +59,11 @@ class NewDetailController extends Controller
     public function show($id)
     {
         //
-    }
+        $LatestNew = LatestNews::findOrFail($id);
+            $thumbnailPath = $this->thumbnailPath;
+            $imagePath = $this->imagePath;
+            return view('new_detail.index', compact('LatestNew', 'thumbnailPath', 'imagePath'));
+        }
 
     /**
      * Show the form for editing the specified resource.

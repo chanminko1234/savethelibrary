@@ -34,16 +34,16 @@
         </a>
       </td>
       <td>
-        <a href="{{url('backend/location_image/'.$locationImage->id.'-'.$locationImage->slug)}}">
+        <a href="{{url('backend/location_image/'.$locationImage->id.'-'.$locationImage->location_slug)}}">
           <img src="{{ $locationImage->showImage($locationImage, $thumbnailPath) }}">
         </a>
       </td>
       <td>
-        <a href="{{url('backend/marketing-image/'.$locationImage->id.'-'.$locationImage->slug)}}">{{ $locationImage->image_name }}
+        <a href="{{url('backend/marketing-image/'.$locationImage->id.'-'.$locationImage->location_slug)}}">{{ $locationImage->image_name }}
         </a>
       </td>
       <td>
-        <a href="{{url('backend/marketing-image/'.$locationImage->id.'-'.$locationImage->slug)}}">{{$locationImage->location_name}}
+        <a href="{{url('backend/marketing-image/'.$locationImage->id.'-'.$locationImage->loacation_slug)}}">{{$locationImage->location_name}}
         </a>
       </td>
       <td>

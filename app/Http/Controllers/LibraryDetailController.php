@@ -3,19 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Traits\ManagesImages;
+use App\Http\Requests\CreateLocationImageRequest;
+use App\LocationImage;
 class LibraryDetailController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-        return view('library_detail.index');
-    }
+ use ManagesImages;
+ public function __construct(){
+
+    $this->setImageDefaultsFromConfig('locationImage');
+
+}
+public function index(){
+    $thumbnailPath = $this->thumbnailPath;
+    $locationImages = LocationImage::latest()->paginate(10);
+    return view('library_detail.index', compact('locationImages', 'thumbnailPath'));
+}
 
     /**
      * Show the form for creating a new resource.
@@ -47,7 +50,14 @@ class LibraryDetailController extends Controller
     public function show($id)
     {
         //
-    }
+       $locationImage = LocationImage::findOrFail($id);
+
+       $thumbnailPath = $this->thumbnailPath;
+
+       $imagePath = $this->imagePath;
+
+       return view ('library_detail.index',compact('locationImage', 'thumbnailPath', 'imagePath'));
+   }
 
     /**
      * Show the form for editing the specified resource.

@@ -3,22 +3,15 @@
 @section('content')
 
 <!-- Sidebar -->
-<div class="col-md-3 space">
+<div class="col-md-3">
 	<div id="sidebar">
 		<ul class="categories">
 			<li>
 				<h4>Categories</h4>
 				<ul>
-					<li><a href="#">အသံထွက်ဝတ္ထု</a></li>
-					<li><a href="#">ကလေးဂျာနယ်</a></li>
-					<li><a href="#">စွယ်စံုကျမ်း</a></li>
-					<li><a href="#">အညွှန်း</a></li>
-					<li><a href="#">စာကြည့်တိုက်</a></li>
-					<li><a href="#">ဥပဒေများ</a></li>
-					<li><a href="#">စာတမ်း</a></li>
-					<li><a href="#">ဓာတ်ပံုပညာ</a></li>
-					<li><a href="#">နည်းပညာ</a></li>
-					<li><a href="#">ပညာရေး</a></li>
+					@foreach($categories as $category)
+					<li><a href="#">{{$category->category_name}}</a></li>
+					@endforeach
 				</ul>
 			</li>
 		</ul>

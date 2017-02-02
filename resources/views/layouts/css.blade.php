@@ -207,7 +207,7 @@
 	}
 	.specials-grids {
 		padding: 2% 0;
-		margin-left: 70px;
+		margin-left: 55px;
 	}
 	button[type=download]{
 		background-color: #2e7d32;
@@ -306,20 +306,17 @@
 .detail {
 	padding-top: 20px;
 	padding-left: 17px;
-	padding-right: 10px;
+	padding-right: 10px
 }
 .scrollup {
-	background-color: #fff;
+	background-color: black;
 	width: 26px;
 	height: 26px;
 	position: fixed;
-	bottom: 1px;
-	right: 1px;
+	bottom: 75px;
+	right: 25px;
 	display: none;
-	text-indent: -9999px;
-	background-image: url(images/icons/Up-Squared-Filled-30.png);
-	background-repeat: no-repeat;
-	background-position: center center;
+	border-radius: 50%;
 	z-index: 999997;
 	transition: all 0.3s;
 }
@@ -406,7 +403,32 @@
 	.map{
 		width: 942px;
 		height: 400px;
-		margin-left: -92px;
+		margin-left: -57px;
+	}
+	.pagination{
+		float: left;
+	}
+
+	.image11{
+		width: 700px;
+		height: 350px;
+	}
+
+	.map{
+
+		width: 750px;
+		padding-bottom: 10px;
+	}
+
+	.content{
+		
+		float: left;
+		justify-content: left;
+	}
+
+	.locationtalbe > thead{
+		overflow-y: hidden;    /* Trigger vertical scroll    */
+		overflow-x: scroll;
 	}
 	.resourcephoto{
 		width: 150px;

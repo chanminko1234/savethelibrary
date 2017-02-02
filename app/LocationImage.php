@@ -13,6 +13,7 @@ class LocationImage extends Model
 	protected $fillable=[
 	'image_name',
 	'location_name',
+	'location_slug',
 	'location_desc',
 	'location_address',
 	'location_content',

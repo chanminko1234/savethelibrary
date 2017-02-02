@@ -104,7 +104,7 @@
     </span>
     @endif
     <label class="control-label">Location Content</label>
-    <input type="text" class="form-control" name="location_content" value="{{$locationImage->location_content}}">
+    <textarea name="location_review" id="summernote2" cols="30" rows="10">{!! $locationImage->location_content !!}</textarea>
 
     @if ($errors->has('location_content'))
     <span class="help-block">
@@ -113,7 +113,7 @@
     @endif
 
     <label class="control-label">Location Review</label>
-    <textarea name="location_review" id="summernote2" cols="30" rows="10">{!! $locationImage->location_review !!}</textarea>
+    <input type="text" class="form-control" name="location_review" value="{{ $locationImage->location_review }}">
 
     @if ($errors->has('location_review'))
     <span class="help-block">
@@ -121,7 +121,7 @@
     </span>
     @endif
     <!-- Submit Button -->
-
+    <br>
     <div class="form-group">
 
         <button type="submit" class="btn btn-primary btn-lg">

@@ -7,6 +7,7 @@ use App\Traits\ManagesImages;
 use App\Http\Requests\CreateResourceCenterImageRequest;
 use App\ResourceCenterImage;
 use App\Http\Requests\EditResourceImageRequest;
+use App\ResourceCategory;
 
 class ResourceCenterController extends Controller
 {
@@ -23,10 +24,11 @@ class ResourceCenterController extends Controller
     public function index()
     {
         //
+        $categories=ResourceCategory::paginate(10);
         $thumbnailPath = $this->thumbnailPath;
         $resourcecenterImages = ResourceCenterImage::paginate(10);
         return view('resourcecenter-image.index', compact('resourcecenterImages',
-            'thumbnailPath'));
+            'thumbnailPath','categories'));
     }
 
     /**

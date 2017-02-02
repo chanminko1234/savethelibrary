@@ -19,7 +19,7 @@
 		
 		<div class="col-md-12">
 			
-			<a href="#" class="scrollup">Scroll</a>
+			<a href="#" class="scrollup text-center"><i class="fa fa-angle-double-up" style="color: white;font-size: 20px"></i></a>
 			@yield('content')
 		</div>
 		
