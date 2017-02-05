@@ -6,7 +6,7 @@
 			<div class="col-md-7">
 				<div class="row text-center">
 					<img src="{{ $locationImage->showImage($locationImage, $thumbnailPath) }}" title="image-name" class="image11 img-responsive">
-					<a href="/library_detail">{{$locationImage->location_name }}</a>
+					<a href="{{ url('/library_detail/'.$locationImage->id.'-'.$locationImage->location_slug) }}">{{$locationImage->location_name }}</a>
 				</div>
 				<div class="row">
 					<span class="pull-left"><i class="fa fa-home fa-2x"></i>{!! $locationImage->location_address!!}</span>
@@ -23,7 +23,7 @@
 					<h6>Library Name: {{$locationImage->location_name }}</h6><br>
 					<h6>Library Address: {!! $locationImage->location_address!!}</h6><br>
 					<h6>Contact Person Name:</h6><br>
-					<h6>Contact Person Ph No: {!! $locationImage->location_content !!}</h6><br>
+					<h6>Contact Person Ph No:</h6><br>
 					<h6>Contact Person Email:</h6><br>
 					<br />
 					@include('library_detail.map')

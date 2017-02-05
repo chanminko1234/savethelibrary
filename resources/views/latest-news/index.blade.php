@@ -37,11 +37,11 @@
 
 
       <td>{!! $LatestNew->news_description !!}</td> 
-      <td>{!! $LatestNew->date !!}</td> 
+      <td>{{ $LatestNew->date }}</td> 
 
-      <td>{!! $LatestNew->time !!}</td>
+      <td>{{ $LatestNew->time }}</td>
 
-      <td>{!! $LatestNew->location !!}</td> 
+      <td>{{ $LatestNew->location }}</td> 
 
       <td class="edit_btn"><a href="{{url('backend/latest-news/'.$LatestNew->id.'/edit')}}"><button type="button" class="btn btn-lg btn-primary">Edit</button></a></td>
     </tr>

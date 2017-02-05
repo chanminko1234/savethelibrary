@@ -10,13 +10,14 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
   <script type="text/javascript">
-   $( document ).ready(function() 
-   {
-    $(function() 
+    
+    $( document ).ready(function() 
     {
-      $.material.init();
+      $(function() 
+      {
+        $.material.init();
+      });
     });
-  });
   	// Can also be used with $(document).ready()
   	// $(window).load(function() {
   	// 	$('.flexslider').flexslider({

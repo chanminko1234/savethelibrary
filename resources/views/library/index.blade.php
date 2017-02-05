@@ -9,7 +9,7 @@
       <li>
         <a href="">
           <img src="{{ asset('imgs/libraryslider/thumbnails/thumb-'.$librySliderImage->image_name.'.'.$librySliderImage->image_extension) }}" class="photo img-responsive" alt="Responsive image">
-          <p class="flex-caption">{!! $librySliderImage->library_description !!}</p>
+          <p class="flex-caption hover-yellow">{!! $librySliderImage->library_description !!}</p>
         </a>
       </li>
       @endforeach
@@ -24,7 +24,7 @@
       <li>
         <a href="">
           <img src="{{ asset('imgs/LatestNewsSlider/thumbnails/thumb-'.$LatestNew->image_name.'.'.$LatestNew->image_extension) }}" class="photo img-responsive" alt="Responsive image">
-          <p  class="flex-caption">{!! $LatestNew->news_description !!}</p>
+          <p  class="flex-caption hover-yellow">{!! $LatestNew->news_description !!}</p>
         </a>
       </li>
       @endforeach
@@ -40,7 +40,7 @@
       <li>
         <a href="#">
           <img src="{{ asset('imgs/LatestReviewSlider/thumbnails/thumb-'.$review->image_name.'.'.$review->image_extension) }}"  class="review img-responsive" alt="Responsive image">
-          <p class="flex-cap">{{ $review->book_name }}<br>{{ $review->author }}</p>
+          <p class="flex-cap hover-yellow">{{ $review->book_name }}<br>{{ $review->author }}</p>
         </a>
       </li>
       @endforeach

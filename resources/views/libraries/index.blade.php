@@ -30,14 +30,14 @@
 						</div>
 						<div id="{{$category->id}}" class="panel-collapse collapse">
 							<div class="panel-body">
+								@php 
+								$cities = App\CategoryForLibrary::where('parent_id', $category->id)->get();
+								@endphp
 								<ul>
-									<li><a href="#" >
-										@if(count($category->childs))
-
-										@include('libraries.manageTown',['childs' => $category->childs])
-										@endif
-
+									@foreach($cities as $city)
+									<li><a href="{{ url('libraries/city/'.$city->id ) }}" >{{$city->title}}
 									</a></li>
+									@endforeach
 								</ul>
 							</div>
 						</div>

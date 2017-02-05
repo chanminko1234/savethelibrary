@@ -70,7 +70,7 @@
 
 
 	}
-	div a p:hover{
+	.hover-yellow:hover{
 		color: yellow;
 	}
 	.booktext{
@@ -285,7 +285,6 @@
 
 .nav-sidebar.pull-right { 
 	border-right: 0; 
-	border-left: 1px solid #ddd; 
 }
 .nav-sidebar.pull-right a {
 	-webkit-border-radius: 0 4px 4px 0; 
@@ -314,7 +313,7 @@
 	height: 26px;
 	position: fixed;
 	bottom: 75px;
-	right: 25px;
+	right: 3px;
 	display: none;
 	border-radius: 50%;
 	z-index: 999997;

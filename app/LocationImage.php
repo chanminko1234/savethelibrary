@@ -18,6 +18,7 @@ class LocationImage extends Model
 	'location_address',
 	'location_content',
 	'location_review',
+	'category_id',
 	'image_extension'
 	];
 }

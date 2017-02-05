@@ -6,12 +6,17 @@
 |--------------------------------------------------------------------------
 |
 | This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
+| by your applic
+
+ation. Just tell Laravel the URIs it should respond
 | to using a Closure or controller method. Build something great!
 |
 */
 
-
+Route::get('libraries/city/{id}', function($id){
+	$cat = App\LocationImage::where('category_id', $id)->get();
+	dd($cat);
+});
 
 Route::resource('/', 'LibraryController');
 Route::get('/libraries', 'LibrariesController@index');

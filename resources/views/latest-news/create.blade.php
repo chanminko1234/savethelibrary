@@ -4,10 +4,6 @@
 
 <div class="container">
     <div class="row">
-
-
-
-
         <div class="col-md-12">
 
             <h2>Create News</h2>
@@ -30,38 +26,26 @@
                     @endif
 
                 </div>
-
-
-
-
                 <!--News Description Form Input -->
-                <div class="form-group{{ $errors->has('news_description') ? ' has-error' : '' }}">
+                <div class="form-group {{ $errors->has('news_description') ? ' has-error' : '' }}">
                     <label class="control-label">News Description</label>
-                    <textarea name="news_description" id="summernote" cols="30" rows="10" value="{{ old('news_description') }}"></textarea>
-
-
+                    <textarea name="news_description" id="summernote" class="form-control" >{{old('news_description')}}</textarea>
                     @if ($errors->has('news_description'))
                     <span class="help-block">
                         <strong>{{ $errors->first('news_description') }}</strong>
                     </span>
                     @endif
-
                 </div>
-
-
-
-
-                <br>
-                <br>
-
                 <!-- date Form Input -->
 
                 <div class="form-group{{ $errors->has('date') ? ' has-error' : '' }}">
 
                     <label class="control-label">Date</label>
+                    <div>
 
-                    <input type="text" class="form-control" name="date" value="{{ old('date') }}">
+                        {{ Form::date('date', \Carbon\Carbon::today())}} 
 
+                    </div>
                     @if ($errors->has('date'))
 
                     <span class="help-block">

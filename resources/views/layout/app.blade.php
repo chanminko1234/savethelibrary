@@ -92,10 +92,13 @@
 
 
 	<script type="text/javascript">
+
 		$(document).ready(function() {
 			$('#summernote').summernote({
 				height:200,
+				placeholder: 'Description...'
 			});
+
 		});
 
 		$(document).ready(function() {

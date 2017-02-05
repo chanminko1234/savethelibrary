@@ -60,6 +60,7 @@ class LocationImageController extends Controller
             'location_address' => $request->get('location_address') ,
             'location_content'=> $request->get('location_content') ,
             'location_review' => $request->get('location_review') ,
+            'category_id' => 21,
             'image_name' => $request->get('image_name'),
             'image_extension' => $request->file('image')->getClientOriginalExtension()
             

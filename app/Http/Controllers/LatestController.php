@@ -19,7 +19,7 @@ class LatestController extends Controller
 	}
 	public function index(){
 		$thumbnailPath = $this->thumbnailPath;
-		$LatestNews = LatestNews::latest()->paginate(10);
+		$LatestNews = LatestNews::latest()->paginate(9);
 		return view('latest.index', compact('LatestNews', 'thumbnailPath'));
 	}
 }

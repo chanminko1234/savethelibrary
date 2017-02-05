@@ -14,5 +14,13 @@ use Illuminate\Foundation\Inspiring;
 */
 
 Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
+	$this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('add:libcat {Lib_Id} {Cat_Id}', function($Lib_Id, $Cat_Id){
+	$Lib = App\LocationImage::where('id', $Lib_Id )->first();
+
+	$Lib->category_id = $Cat_Id;
+	$Lib->save();
+	$this->info("Successfully connected Lib with City!");
+});

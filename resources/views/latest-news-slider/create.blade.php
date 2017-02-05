@@ -43,7 +43,12 @@
 
                     <label class="control-label">Date</label>
 
-                    <input type="text" class="form-control" name="date" value="{{ old('date') }}">
+                    
+                    <div>
+
+                        {{ Form::date('date', \Carbon\Carbon::today()->toDateString())}} 
+
+                    </div>
 
                     @if ($errors->has('date'))
 
