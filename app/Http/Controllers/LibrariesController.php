@@ -7,6 +7,8 @@ use App\CategoryForLibrary;
 use App\Traits\ManagesImages;
 use App\Http\Requests\CreateLocationImageRequest;
 use App\LocationImage;
+use App\State;
+use App\City;
 class LibrariesController extends Controller
 {
     //
@@ -23,7 +25,10 @@ class LibrariesController extends Controller
 
 		$allCategories = CategoryForLibrary::pluck('title','id')->all();
 
-		return view('libraries.index',compact('categories', 'locationImages','allCategories', 'thumbnailPath'));
+		$states=State::get();
+		$cities = City::get();
+
+		return view('libraries.index',compact('states', 'categories', 'locationImages', 'allCategories', 'thumbnailPath', 'cities'));
 
 	}
 }

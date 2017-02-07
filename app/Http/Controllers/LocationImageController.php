@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Traits\ManagesImages;
 use App\Http\Requests\CreateLocationImageRequest;
+use App\LibraryLocation;
 use App\LocationImage;
+use App\State;
+use App\City;
 use App\Http\Requests\EditLocationImageRequest;
 
 class LocationImageController extends Controller
@@ -37,8 +40,8 @@ class LocationImageController extends Controller
      */
     public function create()
     {
-        //
-        return view('location_image.create');
+        $states = State::get();
+        return view('location_image.create', compact('states'));
     }
 
     /**
@@ -49,31 +52,38 @@ class LocationImageController extends Controller
      */
     public function store(CreateLocationImageRequest $request)
     {
+        $slug = str_slug($request->get('library_name'), "-");
         //dd($request->file('image')->getClientOriginalExtension());
           //
-
-        $slug = str_slug($request->get('location_name'), "-");
         $locationImage = new LocationImage([ 
-            'location_name' => $request->get('location_name'),
-            'location_slug'      =>$slug,
-            'location_desc' => $request->get('location_desc'),
-            'location_address' => $request->get('location_address') ,
-            'location_content'=> $request->get('location_content') ,
-            'location_review' => $request->get('location_review') ,
-            'category_id' => 21,
-            'image_name' => $request->get('image_name'),
+            'library_name' => $request->get('library_name'),
+            'slug' => $slug,
+            'library_address' => $request->get('library_address'),
+            'library_town' => $request->get('library_town') ,
+            'contact_name'=> $request->get('contact_name') ,
+            'contact_no' => $request->get('contact_no') ,
+            'email' => $request->get('email'),
+            'facebook' => $request->get('facebook'),
+            'library_location' => $request->get('library_location'),
+            'date' => $request->get('date'),
+            'library_description' => $request->get('library_description'),
+            
+            'date' => $request->get('date'),
+            'services' => $request->get('services'),
+            'city_id' => $request->get('city_id'),
+
+            'image_name'        => $request->get('image_name'),
             'image_extension' => $request->file('image')->getClientOriginalExtension()
             
             ]);
+
         //save model
         $locationImage->save();
 
         //get instance of file
-
         $file = $this-> getUploadedFile();
 
         //pass in the file and the model
-
         $this->saveImageFiles($file, $locationImage);
 
         alert()->success('Congrats!', 'Marketing Image And Thumbnail Created!');
@@ -91,6 +101,8 @@ class LocationImageController extends Controller
      */
     public function show($id)
     {
+
+
         //
         $locationImage = LocationImage::findOrFail($id);
 
@@ -137,11 +149,23 @@ class LocationImageController extends Controller
         }
 
         $locationImage->update([
-            'location_name'         =>$request->input('location_name'),
-            'location_desc'                 =>$request->input('location_desc'),
-            'location_address'  =>$request->input('location_address'),   
-            'location_review'          =>$request->input('location_review'),
-            'location_content'         =>$request->input('location_content'),
+            'library_name' => $request->input('library_name'),
+            
+            'library_address' => $request->input('library_address'),
+            'library_town' => $request->input('library_town') ,
+            'contact_name'=> $request->input('contact_name') ,
+            'contact_no' => $request->input('contact_no') ,
+            'email' => $request->input('email'),
+            'facebook' => $request->input('facebook'),
+            'library_location' => $request->input('library_location'),
+            'date' => $request->input('date'),
+            'library_description' => $request->input('library_description'),
+            
+            'date' => $request->input('date'),
+            'services' => $request->input('services'),
+            'city_id' => $request->input('city_id')
+            
+
             ]); 
         
         $locationImage->save();
@@ -172,7 +196,7 @@ class LocationImageController extends Controller
     }
 
      /**
-     * @param EditImageRequest $request
+     * @param f $request
      * @param $locationImage
      */
      private function setNewFileExtension(EditLocationImageRequest $request, $locationImage)
@@ -185,6 +209,7 @@ class LocationImageController extends Controller
      */
     private function setUpdatedModelValues(EditLocationImageRequest $request, $locationImage)
     {
+
     }
 
 }

@@ -15,7 +15,6 @@ ation. Just tell Laravel the URIs it should respond
 
 Route::get('libraries/city/{id}', function($id){
 	$cat = App\LocationImage::where('category_id', $id)->get();
-	dd($cat);
 });
 
 Route::resource('/', 'LibraryController');

@@ -92,6 +92,22 @@
 
 
 	<script type="text/javascript">
+		$('#state').on('change', function(){
+			// e.preventDefault();
+			// self.parents(".frmSelect").submit();
+			$(this).parents('.frmDelete').submit();
+		});
+		// $('#state').change(
+		// 	function(){
+		// 		alert('kkk');
+		// 		$(this).closest('.frmSelect').trigger('submit');
+		//           or:
+		//          $('#formElementId').trigger('submit');
+		//             or:
+		//          $('#formElementId').submit();
+		
+		//      });
+
 
 		$(document).ready(function() {
 			$('#summernote').summernote({

@@ -39,34 +39,70 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Location  Name</td>
-                </tr>
-                <tr>
-                    <td>
-                        {{$locationImage->location_name}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>Location Description</td>
-                </tr>
-                <tr>
-                    <td>
-                        {{$locationImage->location_desc}}
-                    </td>
-                </tr>
-                <tr>
-                    <td>Location Review</td>
-                </tr>
-                <tr>
-                    <td>
-                        {!!  $locationImage->location_review  !!}
-                    </td>
-                </tr>
-                
-</table>
-</div>
-<div class="container">
-</div>
+                <td>Library Name</td>
+            </tr>
+            <tr>
+                <td>
+                    {{$locationImage->library_name}}
+                </td>
+            </tr>
+            <tr>
+                <td>Library Address</td>
+            </tr>
+            <tr>
+                <td>
+                    {{$locationImage->library_address}}
+                </td>
+            </tr>
+            <tr>
+                <td>Library Town</td>
+            </tr>
+            <tr>
+                <td>
+                    {!!  $locationImage->library_town  !!}
+                </td>
+            </tr>
+            <tr>
+                <td>ContactName</td>
+            </tr>
+            <tr>
+                <td>{!! $locationImage->contact_name !!} </td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+            </tr>
+
+            <tr>
+                <td>{!! $locationImage->contact_no !!} </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+            </tr>
+            <tr>
+                <td>{!! $locationImage->email !!} </td>
+            </tr>
+            <tr>
+            <td>Facebook Link</td>
+           </tr>
+           <tr>
+               <td>{!! $locationImage->facebook !!}</td>
+           </tr>
+           <tr>
+               <td>Library Location</td>
+           </tr>
+           <tr>
+               <td>{!! $locationImage->library_location !!}</td>
+           </tr>
+           <tr>
+               <td>Date</td>
+           </tr>
+           <tr>
+               <td>{!! $locationImage->date !!}</td>
+           </tr> 
+       </table>
+   </div>
+   <div class="container">
+   </div>
 </div>
 @endsection
 @section('scripts')

@@ -17,25 +17,22 @@
 			<div class="right-sidebar">
 				<h2>Category</h2>
 				<div class="panel-group" id="accordion"><!--category-productsr-->
-					@foreach($categories as $category)
+					@foreach($states as $state)
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#{{$category->id}}">
+								<a data-toggle="collapse" data-parent="#accordion" href="#{{$state->id}}">
 									<span class="badge pull-right"><i class="fa fa-arrow-down"></i></span>
 
-									{{ $category->title }}
+									{{ $state->name }}
 								</a>
 							</h4>
 						</div>
-						<div id="{{$category->id}}" class="panel-collapse collapse">
+						<div id="{{$state->id}}" class="panel-collapse collapse">
 							<div class="panel-body">
-								@php 
-								$cities = App\CategoryForLibrary::where('parent_id', $category->id)->get();
-								@endphp
 								<ul>
-									@foreach($cities as $city)
-									<li><a href="{{ url('libraries/city/'.$city->id ) }}" >{{$city->title}}
+									@foreach($cities->where('state_id', $state->id)->all() as $city)
+									<li><a href="{{ url('libraries/city/'.$city->id ) }}" >{{$city->name}}
 									</a></li>
 									@endforeach
 								</ul>

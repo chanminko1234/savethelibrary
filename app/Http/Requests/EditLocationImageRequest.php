@@ -24,7 +24,7 @@ class EditLocationImageRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            
         'image' => 'mimes:jpeg,jpg,bmp,png|max:1000'
         ];
     }

@@ -74,8 +74,8 @@
     </span>
   </a>
   <ul class="treeview-menu">
-  <li><a href="{{ url('backend/latest-review-slider') }}"><i class="fa fa-circle-o"></i>Latest Review List</a></li>
-  <li><a href="{{ url('backend/latest-review-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest Review Slider</a></li>
+    <li><a href="{{ url('backend/latest-review-slider') }}"><i class="fa fa-circle-o"></i>Latest Review List</a></li>
+    <li><a href="{{ url('backend/latest-review-slider/create') }}"><i class="fa fa-circle-o"></i> Create Latest Review Slider</a></li>
   </ul>
 </li>
 
@@ -141,6 +141,18 @@
   <ul class="treeview-menu">
     <li><a href="{{ url('backend/category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
     <li><a href="{{ url('backend/category/create') }}"><i class="fa fa-circle-o"></i> Category Create</a></li>
+  </ul>
+</li>
+
+<li class="treeview">
+  <a href="#">
+    <i class="fa fa-dashboard"></i> <span>Category For Library</span>
+    <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+  </a>
+  <ul class="treeview-menu">
+    <li><a href="{{ url('backend/library-category') }}"><i class="fa fa-circle-o"></i> Category List</a></li>
   </ul>
 </li>
 
